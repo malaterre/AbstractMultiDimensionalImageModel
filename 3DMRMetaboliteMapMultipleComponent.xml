@@ -5,7 +5,7 @@ A.2.7.4 3D MR Metabolite Map - Single Component
 
 Metabolite concentration
 
-Assumes this is a 512x512x4x64 regular volume (U8)
+Assumes this is a 512x512x4x64 regular volume (float32)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
   <!--
