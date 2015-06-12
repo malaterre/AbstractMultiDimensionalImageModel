@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-http://dicom.nema.org/medical/dicom/current/output/chtml/part19/sect_A.2.7.html
-A.2.7.1 Simple 3D Volume
+http://dicom.nema.org/medical/dicom/current/output/chtml/part19/sect_A.2.7.2.html
+A.2.7.2 Simple 4D Volume
 
 T1-weighted MR Signal Intensity
-Notes: Each voxel contains 1 value
 
-Assumes this is a 512x512x64 regular volume (U8)
+Assumes this is a 512x512x64x10 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
 <Component idNumber="1" dataType="UNSIGNED_INT8">
@@ -101,6 +100,20 @@ Assumes this is a 512x512x64 regular volume (U8)
     concernedSpatialDimension="2" index="0"
     cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
     />
+</Dimension>
+<Dimension idNumber="4" numberOfSamples="10">
+  <Semantics>
+    <CodeValue>s</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>Second</CodeMeaning>
+  </Semantics>
+  <Regular width="25" spacing="2.5">
+    <Unit>
+    <CodeValue/>
+    <CodingSchemeDesignator/>
+    <CodingSchemeVersion/>
+    </Unit>
+ </Regular>
 </Dimension>
 <PixelData>
   <DimensionalData dimensionID="2">
