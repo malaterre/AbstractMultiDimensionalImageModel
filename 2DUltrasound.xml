@@ -23,7 +23,7 @@ set to the value 3, and of course by the XML Attribute index varying from 1 to
 200.
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
-  <Component idNumber="1" dataType="UNSIGNED_INT8">
+  <Component idNumber="1" dataType="SIGNED_INT8">
     <Semantics>
       <CodeValue>??</CodeValue>
       <CodingSchemeDesignator>??</CodingSchemeDesignator>
