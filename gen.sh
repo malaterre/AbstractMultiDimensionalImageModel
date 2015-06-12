@@ -5,11 +5,11 @@ for j in {1..1}; do
   uid0=$(uuidgen -r); 
   echo "<DataAt indexWithinDimension=\"$j\" descriptorUUID=\"$uid0\">"
   echo "<DimensionalData dimensionID=\"3\">"
-  for i in {1..64}; do
+  for i in {1..200}; do
     uid1=$(uuidgen -r); 
     uid2=$(uuidgen -r); 
     #echo "$uid1 $uid2";
-    echo "<DataAt indexWithinDimension=\"$i\" descriptorUUID=\"$uid1\" bulkDataUUID=\"$uid2\"/>"
+    echo "<DataAt indexWithinDimension=\"$i\" descriptorUUID=\"$uid0\" bulkDataUUID=\"$uid2\"/>"
   done
   echo "</DimensionalData>"
   echo "</DataAt>"
