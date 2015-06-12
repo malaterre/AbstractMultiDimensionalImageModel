@@ -114,3 +114,4 @@ CodedTerm =
       element ContextGroupLocalVersion { xsd:string }?,
       element ContextGroupExtensionCreatorUID { xsd:string }?
     )?
+# FIXME: Update from CP-1481
