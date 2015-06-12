@@ -8,6 +8,7 @@ Metabolite concentration
 Assumes this is a 512x512x64x4 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
+  <!-- a single component unit should represent all different measures... should it be set to "no unit" ? -->
   <Component idNumber="1" dataType="FLOAT32">
     <!-- http://medical.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4033.html -->
     <Semantics>

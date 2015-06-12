@@ -8,6 +8,11 @@ Metabolite concentration
 Assumes this is a 512x512x4x64 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
+  <!--
+This example could be difficult to handle since Component can be of any type,
+so it is legal to have Comp#1 be U8, Comp#2 be FLOAT32, Comp#3 U8 and Comp#4
+FLOAT32
+       -->
   <Component idNumber="1" dataType="FLOAT32">
     <Semantics>
       <!-- FIXME: this is not clear what to use here -->
