@@ -23,15 +23,15 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Component>
 <Dimension idNumber="1" numberOfSamples="512">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+    <CodeValue>110856</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
+      <CodeValue>mm</CodeValue>
+      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+      <CodeMeaning>millimeter</CodeMeaning>
     </Unit>
     <AxisDirection>
       <CodeValue>110860</CodeValue>
@@ -47,15 +47,15 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Dimension>
 <Dimension idNumber="2" numberOfSamples="512">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+    <CodeValue>110856</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+      <CodeValue>mm</CodeValue>
+      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+      <CodeMeaning>millimeter</CodeMeaning>
     </Unit>
     <AxisDirection>
       <CodeValue>110861</CodeValue>
@@ -71,15 +71,15 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Dimension>
 <Dimension idNumber="3" numberOfSamples="64">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+    <CodeValue>110856</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="96" spacing="1.5">
     <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
+      <CodeValue>mm</CodeValue>
+      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+      <CodeMeaning>millimeter</CodeMeaning>
     </Unit>
     <AxisDirection>
       <CodeValue>110862</CodeValue>
