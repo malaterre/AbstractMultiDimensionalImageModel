@@ -12,8 +12,14 @@ add_custom_command(
   COMMENT "Create RNG from RNC"
   )
 
-add_custom_target(Simple3DVolume ALL 
-  COMMAND ${JING_EXECUTABLE} AbstractImage.rng ${CMAKE_CURRENT_SOURCE_DIR}/Simple3DVolume.xml
-  DEPENDS AbstractImage.rng ${CMAKE_CURRENT_SOURCE_DIR}/Simple3DVolume.xml
-  COMMENT "Validate: Simple3DVolume.xml"
-)
+set(examples
+  Simple3DVolume
+  Simple4DVolume
+  )
+foreach(example ${examples})
+  add_custom_target(${example} ALL
+    COMMAND ${JING_EXECUTABLE} AbstractImage.rng ${CMAKE_CURRENT_SOURCE_DIR}/${example}.xml
+    DEPENDS AbstractImage.rng ${CMAKE_CURRENT_SOURCE_DIR}/${example}.xml
+    COMMENT "Validate: ${example}.xml"
+    )
+endforeach()
