@@ -119,6 +119,7 @@ FLOAT32
   </Dimension>
   <PixelData>
     <DimensionalData dimensionID="3">
+      <!-- descriptorUUID is different here to indicate we are looking at a 3D Single-Frame series -->
       <DataAt indexWithinDimension="1" descriptorUUID="a2f24f44-dab7-4571-9b45-430244fe6a1c" bulkDataUUID="da26ecf0-e4f9-49d5-99b1-4c7087694ad5"/>
       <DataAt indexWithinDimension="2" descriptorUUID="32ee1568-66e0-4de0-babf-6e0c098d92c0" bulkDataUUID="76e484a2-1096-4a34-a401-6c37d83c84d7"/>
       <DataAt indexWithinDimension="3" descriptorUUID="d3d99782-97a6-45de-88db-600b59967e5a" bulkDataUUID="16653eb2-952b-4e4c-8e48-380403c88751"/>

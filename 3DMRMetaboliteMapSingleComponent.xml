@@ -135,6 +135,7 @@ Assumes this is a 512x512x64x4 regular volume (U8)
   </Dimension>
   <PixelData>
     <DimensionalData dimensionID="4">
+      <!-- descriptorUUID is different here to indicate we are looking at a 4D Single-Frame series -->
       <DataAt indexWithinDimension="1" descriptorUUID="0ffd7db8-7fd7-43a5-a6ed-a6a26c12f80c">
         <DimensionalData dimensionID="3">
           <DataAt indexWithinDimension="1" descriptorUUID="323e2d37-2a47-487a-b614-444b01a6380f" bulkDataUUID="7beb112b-74ac-4ef8-afcb-c8ee4aa8807e"/>
