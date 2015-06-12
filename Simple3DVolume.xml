@@ -29,10 +29,20 @@ Assumes this is a 512x512x64 regular volume (U8)
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+      <CodeValue/>
+      <CodingSchemeDesignator/>
+      <CodingSchemeVersion/>
     </Unit>
+    <AxisDirection>
+      <CodeValue>110860</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Left-Right Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110866</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Right To Left</CodeMeaning>
+    </AxisOrientation>
   </Regular>
 </Dimension>
 <Dimension idNumber="2" numberOfSamples="512">
@@ -47,6 +57,16 @@ Assumes this is a 512x512x64 regular volume (U8)
     <CodingSchemeDesignator/>
     <CodingSchemeVersion/>
     </Unit>
+    <AxisDirection>
+      <CodeValue>110861</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Head-Foot Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110868</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Head To Foot</CodeMeaning>
+    </AxisOrientation>
   </Regular>
 </Dimension>
 <Dimension idNumber="3" numberOfSamples="64">
@@ -61,14 +81,24 @@ Assumes this is a 512x512x64 regular volume (U8)
       <CodingSchemeDesignator/>
       <CodingSchemeVersion/>
     </Unit>
+    <AxisDirection>
+      <CodeValue>110862</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Anterior-Posterior Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110870</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Anterior To Posterior</CodeMeaning>
+    </AxisOrientation>
   </Regular>
   <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
   <DirectionCosines
-    concernedSpatialDimension="1" index="1"
+    concernedSpatialDimension="1" index="0"
     cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
     />
   <DirectionCosines
-    concernedSpatialDimension="1" index="2"
+    concernedSpatialDimension="2" index="0"
     cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
     />
 </Dimension>

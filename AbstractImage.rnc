@@ -54,7 +54,7 @@ AbstractImageDataSet =
       }*,
       element DirectionCosines {
         attribute concernedSpatialDimension { xsd:positiveInteger },
-        attribute index { xsd:positiveInteger }?,
+        attribute index { xsd:nonNegativeInteger }?,
         attribute cosAlongX { xsd:double },
         attribute cosAlongY { xsd:double },
         attribute cosAlongZ { xsd:double }
