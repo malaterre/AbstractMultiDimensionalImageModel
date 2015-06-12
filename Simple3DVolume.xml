@@ -11,14 +11,14 @@ Assumes this is a 512x512x64 regular volume (U8)
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
 <Component idNumber="1" dataType="UNSIGNED_INT8">
   <Semantics>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+    <CodeValue>110804</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>T1 Weighted MR Signal Intensity</CodeMeaning>
   </Semantics>
   <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+    <CodeValue>1</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>no units</CodeMeaning>
   </Unit>
 </Component>
 <Dimension idNumber="1" numberOfSamples="512">
