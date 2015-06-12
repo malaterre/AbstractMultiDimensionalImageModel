@@ -8,13 +8,15 @@ Metabolite concentration
 Assumes this is a 512x512x4x64 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
-<Component idNumber="1" dataType="UNSIGNED_INT8">
+<Component idNumber="1" dataType="FLOAT32">
   <Semantics>
-    <CodeValue>110804</CodeValue>
-    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-    <CodeMeaning>T1 Weighted MR Signal Intensity</CodeMeaning>
+    <!-- FIXME: this is not clear what to use here -->
+    <CodeValue>??</CodeValue>
+    <CodingSchemeDesignator>??</CodingSchemeDesignator>
+    <CodeMeaning>Metabolite concentration</CodeMeaning>
   </Semantics>
   <Unit>
+    <!-- again not clear what to use here -->
     <CodeValue>1</CodeValue>
     <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
     <CodeMeaning>no units</CodeMeaning>
@@ -22,15 +24,15 @@ Assumes this is a 512x512x4x64 regular volume (U8)
 </Component>
 <Dimension idNumber="1" numberOfSamples="512">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+    <CodeValue>110856</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
     </Unit>
     <AxisDirection>
       <CodeValue>110860</CodeValue>
@@ -46,15 +48,15 @@ Assumes this is a 512x512x4x64 regular volume (U8)
 </Dimension>
 <Dimension idNumber="2" numberOfSamples="512">
   <Semantics>
+      <CodeValue>110856</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
+   </Semantics>
+  <Regular width="256" spacing="0.5">
+    <Unit>
     <CodeValue>mm</CodeValue>
     <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
     <CodeMeaning>millimeter</CodeMeaning>
-  </Semantics>
-  <Regular width="256" spacing="0.5">
-    <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
     </Unit>
     <AxisDirection>
       <CodeValue>110861</CodeValue>
@@ -79,21 +81,21 @@ Assumes this is a 512x512x4x64 regular volume (U8)
     <Unit>
       <CodeValue/>
       <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
+      <CodeMeaning/>
     </Unit>
   </Regular>
 </Dimension>
 <Dimension idNumber="4" numberOfSamples="64">
   <Semantics>
+      <CodeValue>110856</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
+   </Semantics>
+  <Regular width="96" spacing="1.5">
+    <Unit>
     <CodeValue>mm</CodeValue>
     <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
     <CodeMeaning>millimeter</CodeMeaning>
-  </Semantics>
-  <Regular width="96" spacing="1.5">
-    <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
     </Unit>
     <AxisDirection>
       <CodeValue>110862</CodeValue>

@@ -8,7 +8,7 @@ Metabolite concentration
 Assumes this is a 512x512x64x4 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
-<Component idNumber="1" dataType="UNSIGNED_INT8">
+<Component idNumber="1" dataType="FLOAT32">
   <!-- http://medical.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4033.html -->
   <Semantics>
     <CodeValue>F-6175A</CodeValue>
@@ -21,7 +21,7 @@ Assumes this is a 512x512x64x4 regular volume (U8)
     <CodeMeaning>??</CodeMeaning>
   </Unit>
 </Component>
-<Component idNumber="2" dataType="UNSIGNED_INT8">
+<Component idNumber="2" dataType="FLOAT32">
   <Semantics>
     <CodeValue>F-61620</CodeValue>
     <CodingSchemeDesignator>SRT</CodingSchemeDesignator>
@@ -33,7 +33,7 @@ Assumes this is a 512x512x64x4 regular volume (U8)
     <CodeMeaning>??</CodeMeaning>
   </Unit>
 </Component>
-<Component idNumber="3" dataType="UNSIGNED_INT8">
+<Component idNumber="3" dataType="FLOAT32">
   <Semantics>
     <CodeValue>F-61380</CodeValue>
     <CodingSchemeDesignator>SRT</CodingSchemeDesignator>
@@ -45,7 +45,7 @@ Assumes this is a 512x512x64x4 regular volume (U8)
     <CodeMeaning>??</CodeMeaning>
   </Unit>
 </Component>
-<Component idNumber="4" dataType="UNSIGNED_INT8">
+<Component idNumber="4" dataType="FLOAT32">
   <Semantics>
     <CodeValue>F-61080</CodeValue>
     <CodingSchemeDesignator>SRT</CodingSchemeDesignator>
@@ -59,15 +59,15 @@ Assumes this is a 512x512x64x4 regular volume (U8)
 </Component>
 <Dimension idNumber="1" numberOfSamples="512">
   <Semantics>
+    <CodeValue>110856</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>Linear Displacement</CodeMeaning>
+   </Semantics>
+  <Regular width="256" spacing="0.5">
+    <Unit>
     <CodeValue>mm</CodeValue>
     <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
     <CodeMeaning>millimeter</CodeMeaning>
-  </Semantics>
-  <Regular width="256" spacing="0.5">
-    <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
     </Unit>
     <AxisDirection>
       <CodeValue>110860</CodeValue>
@@ -83,16 +83,16 @@ Assumes this is a 512x512x64x4 regular volume (U8)
 </Dimension>
 <Dimension idNumber="2" numberOfSamples="512">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+      <CodeValue>110856</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
-    </Unit>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
+     </Unit>
     <AxisDirection>
       <CodeValue>110861</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
@@ -107,16 +107,16 @@ Assumes this is a 512x512x64x4 regular volume (U8)
 </Dimension>
 <Dimension idNumber="3" numberOfSamples="64">
   <Semantics>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
+      <CodeValue>110856</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
   </Semantics>
   <Regular width="96" spacing="1.5">
     <Unit>
-      <CodeValue/>
-      <CodingSchemeDesignator/>
-      <CodingSchemeVersion/>
-    </Unit>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
+     </Unit>
     <AxisDirection>
       <CodeValue>110862</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
@@ -139,8 +139,519 @@ Assumes this is a 512x512x64x4 regular volume (U8)
     />
 </Dimension>
 <PixelData>
-  <DimensionalData dimensionID="2">
-    <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>
+  <DimensionalData dimensionID="4">
+<DataAt indexWithinDimension="1" descriptorUUID="0ffd7db8-7fd7-43a5-a6ed-a6a26c12f80c">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="323e2d37-2a47-487a-b614-444b01a6380f" bulkDataUUID="7beb112b-74ac-4ef8-afcb-c8ee4aa8807e"/>
+<DataAt indexWithinDimension="2" descriptorUUID="2ea371ee-2528-4d19-ad28-6618fd9a1d1f" bulkDataUUID="87f21cee-deb9-4b80-b739-a5e2a2f6ee9f"/>
+<DataAt indexWithinDimension="3" descriptorUUID="cfe0d937-da21-4f0f-aa0c-21c66013deb2" bulkDataUUID="dea93ee9-323b-4b27-b3c9-580192a5956e"/>
+<DataAt indexWithinDimension="4" descriptorUUID="67fd4afe-20d3-47d4-9a97-aca15702ac3c" bulkDataUUID="c1f25a78-1676-419f-bca6-b11c68723870"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="2" descriptorUUID="193efe91-3663-4ed4-8f2a-f018ca62b282">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="d17dff9c-78b5-4cdc-a8c8-376f1ccd441a" bulkDataUUID="56f8ef3d-fe13-4ee7-b48a-bc90c6c4acae"/>
+<DataAt indexWithinDimension="2" descriptorUUID="1b42e8f9-3a6a-4377-94ec-4ab13f299429" bulkDataUUID="24583b8c-0df5-41ce-881e-4e118971cf0a"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e7d6237a-a176-4deb-a3c6-ea627115eb19" bulkDataUUID="4d42b761-cbb0-414b-8c3f-38bf7e296125"/>
+<DataAt indexWithinDimension="4" descriptorUUID="653e5919-c48a-4ba7-bc9d-9aa5763f9cc4" bulkDataUUID="fc728f4e-17f6-4372-bf55-d75c8c264efe"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="3" descriptorUUID="c5314963-1a3e-4f92-82be-32378ff44452">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="6a822b97-a6b3-479e-aa73-1279f287be69" bulkDataUUID="8c463be5-bf9a-4df3-b445-f0cbc090cd81"/>
+<DataAt indexWithinDimension="2" descriptorUUID="aa690f9b-d20f-4d78-bdea-9f27df5294a5" bulkDataUUID="fd3b1bf4-18bf-4949-82f7-40b2388084e7"/>
+<DataAt indexWithinDimension="3" descriptorUUID="d8f61de7-d8f0-452e-8a7f-a3dbd860bf4e" bulkDataUUID="9baeefd5-50a0-4ab1-a0ef-8d0febc36ac8"/>
+<DataAt indexWithinDimension="4" descriptorUUID="67659731-e572-4e7b-9094-55134addd8d2" bulkDataUUID="db153b1f-75ee-4f34-a30b-f360e054c599"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="4" descriptorUUID="757b4109-2334-4350-8e8a-dd729d29b853">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="2d426741-e914-4127-91c2-35ec91e3cf3f" bulkDataUUID="eef389d0-ed36-40bf-95cb-8afd1e44fb08"/>
+<DataAt indexWithinDimension="2" descriptorUUID="63e5899b-32f4-4d9b-8034-029075ab204f" bulkDataUUID="19013f33-770b-4bb8-9449-807a29e12d85"/>
+<DataAt indexWithinDimension="3" descriptorUUID="aae272c6-5225-4af6-8811-59fa90a152dd" bulkDataUUID="9833f03a-597d-404a-bc0e-0b4976c30cac"/>
+<DataAt indexWithinDimension="4" descriptorUUID="e4a1e56c-bc3a-4b84-a69c-e2bee9293e26" bulkDataUUID="9ad159ee-f43d-4905-b955-a48e31edf164"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="5" descriptorUUID="c0a74ac6-06c3-4a10-b842-b06a76506f82">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="43d2f675-2b98-4b3a-a4cc-75f72214c9f8" bulkDataUUID="0dab5487-a2d4-4f14-a125-0bea80a2ac28"/>
+<DataAt indexWithinDimension="2" descriptorUUID="83425d56-1843-415a-b9aa-6b1aecdfcd34" bulkDataUUID="e03438e6-52a0-4cad-9bc4-9f3bbb2b77a1"/>
+<DataAt indexWithinDimension="3" descriptorUUID="566dd37c-917d-4333-95a3-91befa9e38e7" bulkDataUUID="a4624c6b-2382-4ee0-bfe7-5b445113fdb4"/>
+<DataAt indexWithinDimension="4" descriptorUUID="ba2e43af-4b16-4035-af40-693e91bebc0c" bulkDataUUID="f3a8f1d4-f128-4ff2-a02b-9ab4d0263a74"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="6" descriptorUUID="52be047b-6cf2-4fa8-806f-325de46a3316">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="427c1f25-ea79-4938-a78c-cb0453dd88f4" bulkDataUUID="fea0ad57-3eaf-4ed0-be98-7f8521dfed29"/>
+<DataAt indexWithinDimension="2" descriptorUUID="72bc7287-7d73-471f-b139-38c8cb3f74cc" bulkDataUUID="288c3bb9-8d25-4abc-8ca6-d3c83b3ff9ba"/>
+<DataAt indexWithinDimension="3" descriptorUUID="d25686be-5c32-4fdf-b293-d5532bbdeb09" bulkDataUUID="1d2ad0d1-6014-4b79-a266-9757b3cbd07b"/>
+<DataAt indexWithinDimension="4" descriptorUUID="c40ec627-9b40-43c2-911d-986ad571a8ce" bulkDataUUID="56401389-904c-4614-879c-c77d9443d056"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="7" descriptorUUID="932c9821-28a1-4e41-a067-cc753acd73ba">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="2b3576e6-1db6-4cf1-8b83-2a73f839b50c" bulkDataUUID="5312685c-9d6b-4fc9-b4ff-4e24dcbdeb49"/>
+<DataAt indexWithinDimension="2" descriptorUUID="d6f41966-c907-4f77-9708-8dd4af304303" bulkDataUUID="704ce034-6f07-41ad-af1e-99c28e50897e"/>
+<DataAt indexWithinDimension="3" descriptorUUID="5535d325-6875-4925-b2ab-723d7edb47a2" bulkDataUUID="41a680ac-80be-46a1-a720-a5e26e1e2dce"/>
+<DataAt indexWithinDimension="4" descriptorUUID="09c9497f-a085-4aa6-b623-730f4ad89521" bulkDataUUID="9b59954e-0dc6-48c8-864c-d61308b1ba9c"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="8" descriptorUUID="f38c4fd6-4835-428f-81de-94983cb6e736">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="5fa5bae5-2250-4ad8-99e9-8c50bc00cfca" bulkDataUUID="da2570f2-8a82-4dd8-93d2-ee9a58ca803f"/>
+<DataAt indexWithinDimension="2" descriptorUUID="3ce7abf1-2c12-4652-bbdd-5992a297c1df" bulkDataUUID="d524596e-aa72-4488-a6f5-cb6b573fb898"/>
+<DataAt indexWithinDimension="3" descriptorUUID="c79ff431-2a40-4920-bacf-38d10c170cea" bulkDataUUID="58b1343f-73f4-4fea-a058-07b3400eecf0"/>
+<DataAt indexWithinDimension="4" descriptorUUID="d002c025-de7d-4f4b-a361-407d956b05a7" bulkDataUUID="c80452bf-9b76-4f02-915d-fd1d6495c7ed"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="9" descriptorUUID="b6ab15e7-0d17-4aaf-95ca-88e8b0074bf3">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="5c9ea7c8-d9f0-4fc4-a578-8aa97088a9dc" bulkDataUUID="602f448b-3c86-42e8-aa98-2025a6890d0f"/>
+<DataAt indexWithinDimension="2" descriptorUUID="31a96b62-612a-4991-96f3-79573d7b8152" bulkDataUUID="9783ca7a-cfea-432c-bd0d-c0f92f98976e"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e77b03df-02e4-4215-800d-25f493fda576" bulkDataUUID="e628671a-938e-4be5-bc8b-20b51d19b0d4"/>
+<DataAt indexWithinDimension="4" descriptorUUID="3e42b8e0-dabe-4ff1-8943-914edc4ee4cf" bulkDataUUID="4de28e14-c3ba-42cc-8834-3608803a785c"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="10" descriptorUUID="97a3cd65-2ec8-4521-9cc7-7f0e15ded84b">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="8b2966da-9e43-4979-8149-96e09cd4f16b" bulkDataUUID="d12818e3-387a-4bb3-a371-470ff226f36d"/>
+<DataAt indexWithinDimension="2" descriptorUUID="0000c13b-8c55-41fd-89a3-5db3e76b6c73" bulkDataUUID="a8d0cfa2-e507-482a-b78f-e9b63c821af0"/>
+<DataAt indexWithinDimension="3" descriptorUUID="c3baf9a7-779c-49de-a2ac-342a56543104" bulkDataUUID="558c9578-509c-4f33-828c-d9bef762d2a5"/>
+<DataAt indexWithinDimension="4" descriptorUUID="f1d1d87b-254b-4624-b9c1-35ee3d07c538" bulkDataUUID="8d578d71-d304-41c4-a9ac-ae323c2bf9df"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="11" descriptorUUID="b58485c5-35f7-4a8d-b6ef-d57a113d0ad4">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="b0dfeb0d-88c1-403a-b7e7-0dac84c6f95d" bulkDataUUID="672916a9-9ef5-48f1-9aaa-ace87de8ac5e"/>
+<DataAt indexWithinDimension="2" descriptorUUID="07f3b1bc-251b-4b44-b15a-4261e9e22fda" bulkDataUUID="2450eb51-6c23-4d3f-b743-c3e4b12bcea9"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0911c15e-ea77-438f-bb49-758e7442ca3b" bulkDataUUID="2b0780f6-915c-419b-bd93-421a3f26c998"/>
+<DataAt indexWithinDimension="4" descriptorUUID="462968e9-3c8b-49d1-8863-e22f53b36f51" bulkDataUUID="c1ba1209-0355-4043-b54c-6db8785a2cdc"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="12" descriptorUUID="55cf24fc-8765-4d6b-a112-54367ea8b845">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="a4d0b0b1-dfd6-4e92-bf0b-9d0ca40f5d24" bulkDataUUID="5341b1bb-1b31-4091-81de-8889dbc46e56"/>
+<DataAt indexWithinDimension="2" descriptorUUID="90992557-a890-4ab9-ad20-4c721b325b2e" bulkDataUUID="12af6c5c-beae-48a3-9561-149902f883a4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="b57edbf4-967b-49cd-8a25-16ef829e0a9a" bulkDataUUID="6a8ca5f1-5abf-4502-b9c9-0c9da5cb44a2"/>
+<DataAt indexWithinDimension="4" descriptorUUID="032545c3-9555-484c-b0f3-800b561d9288" bulkDataUUID="987ee9a8-d933-4be1-ac29-7bdd4976aad8"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="13" descriptorUUID="40e687f7-c282-41c1-9a48-d89338c8e0cf">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="fa45c240-59d4-470f-9263-bd1cf96bc5e7" bulkDataUUID="daa25589-d876-45e3-9cdf-efbc6d12938c"/>
+<DataAt indexWithinDimension="2" descriptorUUID="fc62ca80-864a-457b-b9a9-fb6812959f36" bulkDataUUID="d42f522c-703f-4fdf-8bd4-1ac1145e09f2"/>
+<DataAt indexWithinDimension="3" descriptorUUID="87270cb8-dbc3-49d4-80eb-21e64da4732a" bulkDataUUID="19a91fdd-671b-40d9-90a5-3367a450ac8a"/>
+<DataAt indexWithinDimension="4" descriptorUUID="75fc75ab-c668-4a86-972c-7d84c5447c1d" bulkDataUUID="1c665944-6d87-4e74-ad74-3568dd98adf6"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="14" descriptorUUID="ac1813f5-2173-4829-97db-db9b2b7eac63">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="4486de3e-65b3-4281-bad8-2b82d59d884e" bulkDataUUID="af2b5a47-9233-4f64-877b-8c41d845d3e6"/>
+<DataAt indexWithinDimension="2" descriptorUUID="2346cbe4-aaf4-40e6-ac81-9983098ceb4a" bulkDataUUID="dfacb08c-87cd-45bc-9918-75300cb7cbd9"/>
+<DataAt indexWithinDimension="3" descriptorUUID="eef60526-88c9-49c7-8809-d29a0aa8e5fb" bulkDataUUID="49371892-2952-40d5-971a-3807e42070d7"/>
+<DataAt indexWithinDimension="4" descriptorUUID="55ebd110-e785-4960-a528-b317f2252efd" bulkDataUUID="af309dc0-0040-4a3a-837b-865b50aa2229"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="15" descriptorUUID="d87105ec-6f2a-4c54-b844-ce8df975932f">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="bba13c77-aa9c-45aa-b7e4-30cfe162f051" bulkDataUUID="ffd36ea8-2db5-4f84-8df3-bc5073f1de03"/>
+<DataAt indexWithinDimension="2" descriptorUUID="e6a516a1-9a98-4a2a-a340-850aedc2d17e" bulkDataUUID="ff3f0f96-ab6b-4da2-a269-780e9a06155a"/>
+<DataAt indexWithinDimension="3" descriptorUUID="a54bd889-7368-4504-89b5-53de6cad91f1" bulkDataUUID="f5550a91-b42b-44f9-9fb7-0f104084354e"/>
+<DataAt indexWithinDimension="4" descriptorUUID="11f24757-d0cc-494e-9e7b-0f5344b070b5" bulkDataUUID="57febb48-93d2-4dc3-afd2-97b7ce39432c"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="16" descriptorUUID="acf68102-ebee-4602-8e64-76360ce5cc63">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="a7a84fa5-5370-4c64-9447-a951f6e55180" bulkDataUUID="10688cad-ea60-4634-8bd4-945b92437951"/>
+<DataAt indexWithinDimension="2" descriptorUUID="6a366bb9-dd7d-4352-838e-34f22b0eacad" bulkDataUUID="e52b0b40-604d-4134-a716-aac724895f12"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0d3d08f2-ef5a-4376-bf50-95341d3f1def" bulkDataUUID="01f19bdb-b734-4998-97c3-927fe1744af4"/>
+<DataAt indexWithinDimension="4" descriptorUUID="efeeb2f6-e108-47ac-9df5-969a243adecc" bulkDataUUID="cfca8d8e-5e1f-4fdc-93bd-9e151866930a"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="17" descriptorUUID="657b1c06-a06b-4a63-88db-6a95498a5c7e">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="f89f1671-e385-41a7-95db-9495d7cf1177" bulkDataUUID="7490c626-9a6a-49bd-b3d3-dc8afbca0824"/>
+<DataAt indexWithinDimension="2" descriptorUUID="0b4778d5-4b2e-47a0-849f-870cd7c08bec" bulkDataUUID="892690ac-5235-4ed8-94b8-10f7a66601d5"/>
+<DataAt indexWithinDimension="3" descriptorUUID="8ec54c2c-9bc4-4a09-8bab-b9428c3d61d4" bulkDataUUID="90da758f-b158-49fc-8a87-8fc3ba4c0f57"/>
+<DataAt indexWithinDimension="4" descriptorUUID="2247762d-a991-498c-80bb-171673dcb693" bulkDataUUID="92336b57-85a0-45e2-87e6-c8a3fac4ca6d"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="18" descriptorUUID="49ec3d39-240c-47bf-b61d-56d6cbb0e619">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="d9e3ede1-a823-40db-8bde-b9dc81b8af21" bulkDataUUID="109505c4-e1c5-4bab-8919-7a7bf51dda18"/>
+<DataAt indexWithinDimension="2" descriptorUUID="1641143d-12f5-4844-87ff-00dd124e50f4" bulkDataUUID="239d2552-d75e-489b-8b82-27f2cf11fe33"/>
+<DataAt indexWithinDimension="3" descriptorUUID="6481a1b4-0739-4611-b941-9f3bf60eabac" bulkDataUUID="b5475bd1-d5d5-4eb3-8de7-c7071808ddc4"/>
+<DataAt indexWithinDimension="4" descriptorUUID="49b725a4-2030-4792-983f-b9e80747b189" bulkDataUUID="872458a1-98b2-494b-adab-0b3c43690ded"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="19" descriptorUUID="f31e7e91-5c1b-43c6-90b2-1f9b972e91eb">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="9384ec00-5ca6-4c50-855e-02d01d4e6473" bulkDataUUID="d183935c-106c-4e03-bf51-6e441e6c563c"/>
+<DataAt indexWithinDimension="2" descriptorUUID="f7917471-12b3-4252-9107-7298337c7ba3" bulkDataUUID="a5dc11e7-5be6-4c54-aa12-2e1707af851a"/>
+<DataAt indexWithinDimension="3" descriptorUUID="9a22ea35-3b0e-4422-b703-b207bdd4c95c" bulkDataUUID="8896efdb-2310-400d-835a-b65b69d22e42"/>
+<DataAt indexWithinDimension="4" descriptorUUID="292086ca-e370-4ba6-99cc-04c833f2687e" bulkDataUUID="4a68b6e2-5fa8-4f7c-b79a-f2da724f1dcd"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="20" descriptorUUID="0c90eff4-3849-41d6-a19f-6fae2876d181">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="c38f2a42-2425-45b6-ad96-dd86b8decee5" bulkDataUUID="43842f74-f55b-44dc-8fa6-907b8b3c93a6"/>
+<DataAt indexWithinDimension="2" descriptorUUID="1aa89147-ffe1-46cd-ad7d-e0e646a7932f" bulkDataUUID="391acd04-43b6-4793-bf7f-7ee9e09a8df5"/>
+<DataAt indexWithinDimension="3" descriptorUUID="5515ab02-4ed9-4501-88a7-715669c4ac5a" bulkDataUUID="35778949-f067-440e-a76c-c55c79773d91"/>
+<DataAt indexWithinDimension="4" descriptorUUID="0e556afe-aeb3-4029-b324-646b33dbb297" bulkDataUUID="3eaa1556-226c-4e92-ab6a-8c2385056adb"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="21" descriptorUUID="f7a9278d-2f33-4afa-ae2d-e6478faa6826">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="bc4acc78-245e-4cda-8a8f-fff8b89e2d93" bulkDataUUID="b36857b0-57eb-454f-8bef-4a692dab34da"/>
+<DataAt indexWithinDimension="2" descriptorUUID="9325676f-cf36-469d-bff4-3c614d881d29" bulkDataUUID="45faa64d-7d79-433d-94a4-ee10736d8f0d"/>
+<DataAt indexWithinDimension="3" descriptorUUID="cc176ea0-716f-4e99-b963-92cd57ebd4f8" bulkDataUUID="22cd939a-9abe-488e-99e1-144ef0641d0e"/>
+<DataAt indexWithinDimension="4" descriptorUUID="cc073598-10c4-467a-9a71-1c3905630f86" bulkDataUUID="039d6637-a9ed-4d92-9df8-28bfda8a0b0e"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="22" descriptorUUID="57e51245-46d1-4749-8cdf-b81c64428586">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="1da24d3b-b78d-4824-9d24-4c18a0cd8cb9" bulkDataUUID="4de704a9-672a-452a-9b3e-92f929d3bab2"/>
+<DataAt indexWithinDimension="2" descriptorUUID="81073b6d-7304-4965-b09d-4410ecb7c4af" bulkDataUUID="f1186b53-13c0-4e1d-921f-6a912e1ef458"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0c8b0807-3da0-40f6-996f-0088645f4ad9" bulkDataUUID="a611a4d2-30a2-47dc-bae4-56371187e36e"/>
+<DataAt indexWithinDimension="4" descriptorUUID="92037f33-19d7-49c0-8b14-17f738952429" bulkDataUUID="999d7fbe-c39e-4eb5-be6d-bf3391038f6a"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="23" descriptorUUID="7b2a1980-51a0-4ea3-8edb-667bf3bf6eb3">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="5943c364-7dac-4fb5-96e6-3dcf210a934e" bulkDataUUID="919ae931-9de1-414c-b0f1-9904b5373285"/>
+<DataAt indexWithinDimension="2" descriptorUUID="c1ef93f1-5d7d-473c-bf22-a0e78175dfc2" bulkDataUUID="26babccb-b2b2-41d6-b890-78c2cc8aac72"/>
+<DataAt indexWithinDimension="3" descriptorUUID="d2094168-226e-4edc-ab78-faad038abda8" bulkDataUUID="98be65a3-cc93-405b-beed-b6923d486a91"/>
+<DataAt indexWithinDimension="4" descriptorUUID="dfd50480-2707-4970-928f-3ff173347786" bulkDataUUID="05de143e-1818-434e-a3cc-42eaa9eefc4f"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="24" descriptorUUID="89a9527f-ec9e-4a7b-9aab-ca974ad9d257">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="242f3dc5-32d7-473a-95fb-0ae1a28648e9" bulkDataUUID="2d9ee1ac-e898-47e0-b060-bd5c323bb06e"/>
+<DataAt indexWithinDimension="2" descriptorUUID="526806cb-30d9-43c7-a063-49c0446fde19" bulkDataUUID="fe125c92-a6c9-4b72-90f9-b7622f783782"/>
+<DataAt indexWithinDimension="3" descriptorUUID="8bc32c75-61af-4eec-b701-ccb6cba09cc0" bulkDataUUID="7d55e5f0-76be-4a1b-b6e5-a1ea338cefbd"/>
+<DataAt indexWithinDimension="4" descriptorUUID="6a68a9c2-68c1-43fe-a16b-57d0f7291b53" bulkDataUUID="c2f2cb5e-d6e4-4aac-9ecf-91498936caaa"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="25" descriptorUUID="dd3e1b99-b310-44c8-8e3a-975af544bb92">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="c09df890-2dd4-4c18-82a9-b36099b49ffc" bulkDataUUID="2ae9f572-b2dc-4f15-989b-e2a79460ab91"/>
+<DataAt indexWithinDimension="2" descriptorUUID="a4341b4d-0598-4060-8003-4506660bd234" bulkDataUUID="e0193c14-acd8-48b9-be04-7c8a695c654c"/>
+<DataAt indexWithinDimension="3" descriptorUUID="de27be21-0552-4c63-8e98-26ca046e6cac" bulkDataUUID="52598244-b6e9-4c0d-9ff8-74696b0c5f00"/>
+<DataAt indexWithinDimension="4" descriptorUUID="c97a3128-78b5-4959-b6d8-9a7df4ef615a" bulkDataUUID="1a075c82-a124-4b94-8872-b40ba4b0c753"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="26" descriptorUUID="6f97dc66-32ff-4b78-add9-523e95934914">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="39114b77-d0dc-4756-a330-d1484d0933da" bulkDataUUID="a087e4e5-3455-4644-94ad-4c2553d21b25"/>
+<DataAt indexWithinDimension="2" descriptorUUID="485038d9-4a5f-4f7a-9cf5-bca81c3e9630" bulkDataUUID="7579b444-41e3-45b2-8c22-c157f9a6efc0"/>
+<DataAt indexWithinDimension="3" descriptorUUID="94334e1d-48cf-43a2-b205-426997b78157" bulkDataUUID="f719cccd-e462-4e3d-a4e3-fd513f234cc4"/>
+<DataAt indexWithinDimension="4" descriptorUUID="b9a301e2-a6ed-420d-94d7-a0ba91308b9a" bulkDataUUID="4ba196c8-34e5-4570-9f0f-83610291b09d"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="27" descriptorUUID="85d08da5-86ec-4750-8398-f8569409e030">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="447a5e03-4a8c-4789-b1af-75c6b0190a45" bulkDataUUID="1fc760b9-95ff-4a4e-8108-32564befc4a3"/>
+<DataAt indexWithinDimension="2" descriptorUUID="06e116a0-88a3-4789-8c55-5f98fd7625ae" bulkDataUUID="91a1e02b-ebc4-4a62-96fd-99d5b095a6f5"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0e4819db-5532-459c-98c7-27954cff94bd" bulkDataUUID="726865db-9a47-47a8-8647-8f134b3f9f0e"/>
+<DataAt indexWithinDimension="4" descriptorUUID="3420f696-d1e7-4cdc-8974-fb4f69a8d5db" bulkDataUUID="4ef19503-7125-4a62-85d2-22424bc6f718"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="28" descriptorUUID="659d8e98-3010-4ac4-9c7c-906741b63073">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="973d0b88-97ef-4af8-b307-f39a585bacf4" bulkDataUUID="6a9d919b-ea13-4ea1-a6fc-d47f0e7a4eaa"/>
+<DataAt indexWithinDimension="2" descriptorUUID="86d1cbec-cbcb-4896-911a-e55d711f9a70" bulkDataUUID="be6d66e6-13cf-4108-83e5-6d879d1b9c07"/>
+<DataAt indexWithinDimension="3" descriptorUUID="b31d6ba6-88e9-4d6d-b16e-8579bc914662" bulkDataUUID="9f10fba6-5b67-4f1b-bf48-1a62e41ec320"/>
+<DataAt indexWithinDimension="4" descriptorUUID="de44477a-1a8f-4f3f-8aec-1a97392dbf86" bulkDataUUID="96e5fc91-a411-4b47-b728-ae93d3b9531c"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="29" descriptorUUID="670fe65f-5166-4a82-9009-654ef67c7c05">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="fcc43468-2d10-4d74-8db7-68de5573a7a2" bulkDataUUID="09f9a043-24df-4888-9e59-db9270db52a7"/>
+<DataAt indexWithinDimension="2" descriptorUUID="d3c0c14e-318b-493b-bab6-2971e6bc8955" bulkDataUUID="46a6d28f-3d08-4f81-898a-e9f54b4461b0"/>
+<DataAt indexWithinDimension="3" descriptorUUID="9fc8da9a-4fc8-4bda-ae51-5a40eb2d30ce" bulkDataUUID="09ef0ec3-5e92-4720-99a4-ea88fabb0af2"/>
+<DataAt indexWithinDimension="4" descriptorUUID="229296dd-d480-4063-bfeb-b5816c0b080a" bulkDataUUID="6e3bc588-ebaf-4946-ab3d-5ee3100d2048"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="30" descriptorUUID="8e8d3921-c337-4164-8f62-6f218f31954a">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="eda55ef2-9f75-4ef6-b0c4-e0e0534e86da" bulkDataUUID="16fcdfb0-42fb-4cc1-af1a-2ad274acef1f"/>
+<DataAt indexWithinDimension="2" descriptorUUID="580af1af-a646-424e-a449-4bd4f742ea83" bulkDataUUID="e4b9219b-ae1e-4bd8-ae18-7d773ac2d2ed"/>
+<DataAt indexWithinDimension="3" descriptorUUID="d1177ec4-d55a-4515-90c1-f069b63c4771" bulkDataUUID="762e77f0-aafa-45c9-85f2-59b0bafcec58"/>
+<DataAt indexWithinDimension="4" descriptorUUID="cc58b7a6-be76-49c3-84c7-bc07feba24b1" bulkDataUUID="462de42f-d6ee-4ed2-894c-59d311d73025"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="31" descriptorUUID="cb0a390e-8868-4a50-b1b3-89c19bd3eb90">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="162d3224-cd36-4cc2-a348-5164c229cc43" bulkDataUUID="7f219cd9-9691-4075-983c-40a6bebfadd9"/>
+<DataAt indexWithinDimension="2" descriptorUUID="243819fe-e084-47e6-bf48-fa5b74d2ba87" bulkDataUUID="6982678f-b339-41b3-a4f5-2f4e82ef253c"/>
+<DataAt indexWithinDimension="3" descriptorUUID="12c6d88d-3369-4091-ab72-a207bc184125" bulkDataUUID="25493482-934d-45f0-b99a-7de014bdd336"/>
+<DataAt indexWithinDimension="4" descriptorUUID="438daf20-bb7f-4b68-b288-efd231182288" bulkDataUUID="95c3510a-21da-40e2-b116-dfe5f5b46449"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="32" descriptorUUID="fa97fd04-4d9c-4f0d-982c-096b75cb67b0">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="39adf54c-59b1-4305-b9c6-00a821b5fe10" bulkDataUUID="06f50755-ae64-47a0-9442-d0f9321b59bf"/>
+<DataAt indexWithinDimension="2" descriptorUUID="5b918874-1e99-41c6-9286-27214abef14e" bulkDataUUID="05afee26-a535-485f-86d9-9691d4080a2b"/>
+<DataAt indexWithinDimension="3" descriptorUUID="19a78eb2-b8d2-47ce-a722-b406e660fb84" bulkDataUUID="b2f87514-ce34-4e87-95a5-7517f220d242"/>
+<DataAt indexWithinDimension="4" descriptorUUID="5dcde853-d002-49d9-bec9-2897a1ed747b" bulkDataUUID="ff51467f-5637-4f4e-b6e7-63caa71d0512"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="33" descriptorUUID="3cbe09a7-a340-40a6-a856-b3341cc42d5b">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="574d8ad8-8e02-4a85-8657-95c7e7807b3b" bulkDataUUID="b4c800bc-b11f-4a65-8efe-b29b58087fa9"/>
+<DataAt indexWithinDimension="2" descriptorUUID="ab097b47-b466-4ce4-b67b-88ecea7e6531" bulkDataUUID="a956d4ce-f327-4d80-b2f4-ab0ca499cf85"/>
+<DataAt indexWithinDimension="3" descriptorUUID="240c27bf-69e1-4978-bb8f-6a39d0eb947c" bulkDataUUID="69f8e9c3-c724-4616-89e3-e58e39fa7855"/>
+<DataAt indexWithinDimension="4" descriptorUUID="4d642eb4-48b2-48d8-b650-113289baa3d8" bulkDataUUID="67a36152-4c96-4fe7-aa2a-7be422d7fbb8"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="34" descriptorUUID="0061f0f4-5e09-4095-b2bb-a34076038082">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="4325fe5e-caf9-4003-ba61-a4b1ab89a4fe" bulkDataUUID="b9803fd6-5414-4102-80d3-f2c88fad41f7"/>
+<DataAt indexWithinDimension="2" descriptorUUID="e7babfea-2813-4e7e-9a0b-db07576d1eb4" bulkDataUUID="ec5726b3-3763-42e3-a8c2-6f7e339cae2d"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0427b200-401f-419d-9237-033e6f24bd2f" bulkDataUUID="4c3e15fb-1504-42ea-92ed-1ffc32d545ad"/>
+<DataAt indexWithinDimension="4" descriptorUUID="f0795199-82ba-4825-b0ad-6a8f46a13d50" bulkDataUUID="65986438-a726-47a5-ab73-69c18aff4380"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="35" descriptorUUID="6b97bd03-a84b-49d8-bd0b-ba7c1d02ae0f">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="2f49abeb-a265-4ea3-9600-e398495fdb89" bulkDataUUID="68bfce16-89d4-43ac-9c18-2660ccafa1b9"/>
+<DataAt indexWithinDimension="2" descriptorUUID="199a04bc-2992-4894-bcbb-f4f0697dc72a" bulkDataUUID="0e7f5eb1-ca25-4fb7-af5c-3ae9ef2b5aa9"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e35e2aad-3633-46c7-8759-9ff40c9964bd" bulkDataUUID="fcb55ae5-18ed-4a50-adcf-763c821f0f69"/>
+<DataAt indexWithinDimension="4" descriptorUUID="ed730b96-9a16-41c1-8bce-1768e36c6a2d" bulkDataUUID="551eb758-7f91-4616-9d5b-2bb4be7263ae"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="36" descriptorUUID="c645a0fd-83cb-4036-aa54-bd478a9c074d">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="4598aed0-a0f5-469b-8886-d1578a667627" bulkDataUUID="1c8f1687-7648-4fb8-a562-9eec0c98b5aa"/>
+<DataAt indexWithinDimension="2" descriptorUUID="f16f66a4-2e97-4bf9-8fd6-063e40c71718" bulkDataUUID="af72fd1f-a593-4c48-9a6a-237701a8f200"/>
+<DataAt indexWithinDimension="3" descriptorUUID="fc9ccf90-12ff-45d7-96a4-8e68393ae38e" bulkDataUUID="1629e51e-ef04-4e56-84f8-2e79e4b4d283"/>
+<DataAt indexWithinDimension="4" descriptorUUID="df42ec34-fe98-4549-b9ef-0a8d9bd1c00e" bulkDataUUID="9e57fee4-d658-4ede-a1d9-f381e54e3bb3"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="37" descriptorUUID="37a6c935-c2b8-4d31-9f18-3c8335311590">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="dde28f36-4e2d-4ea7-92b0-98723812d94b" bulkDataUUID="0f1d0f16-f0ef-4528-a5d0-c35691759108"/>
+<DataAt indexWithinDimension="2" descriptorUUID="3cba2e85-cf04-4e5e-8e66-61a651de04b6" bulkDataUUID="6e998a51-7a71-4b9d-b2eb-360e65de64b3"/>
+<DataAt indexWithinDimension="3" descriptorUUID="43bd6e55-3f40-4820-bd9a-ec13365c880d" bulkDataUUID="e846e10c-ea59-4ebd-80a7-6d3e8a5a8ac2"/>
+<DataAt indexWithinDimension="4" descriptorUUID="d9edb96a-5aeb-4647-a4e2-9d37670b13d1" bulkDataUUID="013e682e-7453-4d3d-ba4d-547ebd23bc77"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="38" descriptorUUID="1d7d2988-554f-4e7c-b708-67a78ebcbb86">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="17a4a462-3731-404c-85c5-5cec0d7ddb46" bulkDataUUID="f9d53eed-21ab-43f1-bc0a-600e78e35be7"/>
+<DataAt indexWithinDimension="2" descriptorUUID="332a187a-e778-47f1-9295-57748d9ff5ae" bulkDataUUID="a18acce1-7a1a-4f1a-973e-c05b3faec42a"/>
+<DataAt indexWithinDimension="3" descriptorUUID="9d96b794-0a5e-46d6-b517-511dad85655b" bulkDataUUID="4cd08fcf-e147-49ad-9528-e36e362e0d61"/>
+<DataAt indexWithinDimension="4" descriptorUUID="53704e0e-4e47-4c93-b98a-61a3117a946d" bulkDataUUID="4e555639-3e7f-482b-9d31-798bf1c1606a"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="39" descriptorUUID="0c60d997-303c-47f2-b924-4feeba1a0cea">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="2a5e9411-7b1b-4f71-85c8-7448f806a9e7" bulkDataUUID="65440b79-bb12-4e8c-86e8-99d7b0135d31"/>
+<DataAt indexWithinDimension="2" descriptorUUID="d65ce004-4507-4d85-a1da-b1b9c083bfa1" bulkDataUUID="95c4f69f-09ab-461c-868d-7d47ab754813"/>
+<DataAt indexWithinDimension="3" descriptorUUID="288b7bfe-95dd-4c53-b770-17294b8bb5bb" bulkDataUUID="65bdcd4d-8720-4bfa-bbea-649660c68d30"/>
+<DataAt indexWithinDimension="4" descriptorUUID="2e6a56b7-3525-4384-9dfb-99a3b053b475" bulkDataUUID="4a907cd8-028c-4acb-b138-fb084b0ededd"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="40" descriptorUUID="ac3377f9-9e43-45d9-98a3-34f85f7998d4">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="e48d043d-3a1e-4e19-b900-73e95d62da1b" bulkDataUUID="2f7a3723-f47d-42f3-a0aa-cd561c571c2e"/>
+<DataAt indexWithinDimension="2" descriptorUUID="da467efd-2734-447d-99a3-a49795594b6d" bulkDataUUID="416fd55b-6066-4a74-98be-7d3c1017fc14"/>
+<DataAt indexWithinDimension="3" descriptorUUID="1a340383-f483-411c-bc53-c34d118b289b" bulkDataUUID="7704b07b-4070-461a-8a31-026fb4630a90"/>
+<DataAt indexWithinDimension="4" descriptorUUID="a4fea752-e965-4005-a2a6-0d2380072f72" bulkDataUUID="c216e0d1-2221-46f7-88d2-e8f332ae38df"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="41" descriptorUUID="a00ce1b7-3545-4623-b523-e25568cb5298">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="d7fe043e-0e66-492e-a788-a90186a8ab2a" bulkDataUUID="36c8c986-2c66-44ff-9138-e3cb2ef5b377"/>
+<DataAt indexWithinDimension="2" descriptorUUID="97a2e91a-6a88-492a-a8e3-a4013ecff6ab" bulkDataUUID="bf0628af-bc88-4553-a0b3-be6f7d0441e6"/>
+<DataAt indexWithinDimension="3" descriptorUUID="587a266f-1753-4c84-bf84-aea775518580" bulkDataUUID="dcd9426b-08cc-4b0e-9a9b-53a2a5b376b5"/>
+<DataAt indexWithinDimension="4" descriptorUUID="59c1643f-97b8-4ce7-bf16-a509ffd954c7" bulkDataUUID="172aab08-fb8a-4551-a67d-a20f79c33ed7"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="42" descriptorUUID="599fb399-30f2-4d91-97ed-19305330ebfa">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="bd85e640-904f-483d-a69a-4bcf57c7e1c9" bulkDataUUID="e484c2ee-53cc-40dc-bcd0-ef0d21a4ea49"/>
+<DataAt indexWithinDimension="2" descriptorUUID="b3b554b3-14c3-4b88-82c6-9f36dabaf43b" bulkDataUUID="b6f32135-2b72-4508-936c-16735e9924c2"/>
+<DataAt indexWithinDimension="3" descriptorUUID="eb36d8c3-432a-430d-ac4c-54f4228443dd" bulkDataUUID="011bbbfe-4d90-4228-8287-1c76e43d7fa0"/>
+<DataAt indexWithinDimension="4" descriptorUUID="687178ff-2106-42d2-8163-6aeb4127a8ab" bulkDataUUID="5dffacde-5ab9-45a2-bd23-288ba0ac87d7"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="43" descriptorUUID="3b319bc8-57e2-4069-8d8c-f57fd6ee85d6">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="50ab4d42-dea6-49dc-b4b3-e10c0a7b7e73" bulkDataUUID="053d4ed2-41e9-48af-aa0c-c6ce23e865a1"/>
+<DataAt indexWithinDimension="2" descriptorUUID="44b0e9bc-3ab8-4cd6-b680-48fbc4914fce" bulkDataUUID="871dc4e9-0e58-49d7-8a2d-d43a4ff85ed4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="84815ea8-50e7-4f18-a9e9-070c6efe6475" bulkDataUUID="a5339eef-74ea-40e3-9599-bfeeaab49289"/>
+<DataAt indexWithinDimension="4" descriptorUUID="5ea83e97-58c7-4202-b6e0-08f71ff6a2a5" bulkDataUUID="685dd21c-288f-4a9e-95c6-e8fe7088bb6e"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="44" descriptorUUID="0ced1b59-16ed-4b30-bc02-60a83c08d59a">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="fea7826a-ca11-4dd8-817b-697fce41d3ed" bulkDataUUID="55cec979-1947-423e-806b-99f2e7538656"/>
+<DataAt indexWithinDimension="2" descriptorUUID="83c16934-7448-4d94-a82b-3166929672ac" bulkDataUUID="08674caa-aaea-4ff8-9b41-84cc5ac686d4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="5e254d12-cc1f-4f5e-af50-ac9f2111b40b" bulkDataUUID="5ebb1f42-3bdb-46de-85d9-e28642260e3c"/>
+<DataAt indexWithinDimension="4" descriptorUUID="e27a1cca-1468-4992-a77e-003f1c9ced47" bulkDataUUID="8561dfa2-c86c-49c7-baa0-55bd8a0aea87"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="45" descriptorUUID="f8de597a-303d-4924-9eda-d734e7c9d28c">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="63011a58-e326-4da6-bab8-d77d06af628b" bulkDataUUID="1964b017-3a35-4355-ae15-d771e1c66ea4"/>
+<DataAt indexWithinDimension="2" descriptorUUID="5cba9b5b-735b-4ce9-93c1-e7b936d6bd9f" bulkDataUUID="a64428a7-1b89-44a5-a799-8361088be0c9"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e1561dcf-cc77-4997-9280-3bfff148e156" bulkDataUUID="34a452a4-3cb7-42e7-ae20-738e76e75959"/>
+<DataAt indexWithinDimension="4" descriptorUUID="431181f6-3494-4c8d-b2a3-52caf0664904" bulkDataUUID="38c5c624-e60c-48a0-b76a-655f929d49d0"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="46" descriptorUUID="f9a04d16-cf19-4b26-9141-91208c739cb6">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="b61ce389-908d-48a1-b4e2-c34f508cd7d6" bulkDataUUID="f9bec4fb-3414-4e32-bf27-fcbf79ce8bbb"/>
+<DataAt indexWithinDimension="2" descriptorUUID="e0c78701-acb9-477f-a61e-c52aa0740dfc" bulkDataUUID="aa6b74ea-059a-4691-b8aa-6e6acb87bfbc"/>
+<DataAt indexWithinDimension="3" descriptorUUID="9195c2db-deef-458f-95a6-349f622b1832" bulkDataUUID="dc1a3c5d-f4bb-49ac-9b25-84b8c8335ba6"/>
+<DataAt indexWithinDimension="4" descriptorUUID="20eb1866-a5af-46e5-a71c-1f1b31fcc18f" bulkDataUUID="c340928f-c350-4ba2-a4d0-cbed36de1602"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="47" descriptorUUID="31c72a16-6696-484d-9ef6-2dfa5b470990">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="09e3283b-929d-4401-8f5b-ab5f4205255f" bulkDataUUID="ea2ce756-1fbf-4a99-a66c-553dae0b17c4"/>
+<DataAt indexWithinDimension="2" descriptorUUID="468fd920-74e8-459d-96b2-805321898cb0" bulkDataUUID="e2b9c22d-ba44-4320-acb6-4d3b66d7812c"/>
+<DataAt indexWithinDimension="3" descriptorUUID="6e55f977-4293-44ec-8a79-cf7659f243e9" bulkDataUUID="e5c48596-aff7-4b0c-82a7-08be35d3a2e5"/>
+<DataAt indexWithinDimension="4" descriptorUUID="367f6193-0123-41a8-ab1e-9cef288ede7b" bulkDataUUID="9d5a0f4d-eca8-49c9-9497-f3052fbaa7b1"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="48" descriptorUUID="b3d36f52-ecaf-4a4f-82a5-d623aa16b835">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="38e46a68-0d08-420b-9c74-820f70be2d8f" bulkDataUUID="7f321b76-7895-464d-8ef8-ee85471156b6"/>
+<DataAt indexWithinDimension="2" descriptorUUID="53971b8e-da7a-4f8e-aff6-490973424cc6" bulkDataUUID="0bfbb940-723c-4406-ae42-fc0b54310e43"/>
+<DataAt indexWithinDimension="3" descriptorUUID="44b27bd4-6bf0-4cd2-af70-c76c58b77b64" bulkDataUUID="dfc7cda9-66fb-4eb6-be96-d6f94e874e2a"/>
+<DataAt indexWithinDimension="4" descriptorUUID="29cb5cf6-d924-4453-90d2-af56fc1145fc" bulkDataUUID="8b66a483-f922-445e-8eb1-62872016d0da"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="49" descriptorUUID="82c3e5e5-928c-4745-b765-073018cee030">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="4ddce65f-13aa-4dc4-bfec-9144c1dc908f" bulkDataUUID="3c01e0a9-3803-4b1a-bff2-b0837c0a35e3"/>
+<DataAt indexWithinDimension="2" descriptorUUID="1a650d8e-b53d-4111-b865-346da28a30b1" bulkDataUUID="210c76a5-c013-4680-87b7-39f5d3e5d2f6"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e2a52f1a-1bcf-4cbf-ae26-2a78d97b9eae" bulkDataUUID="26f4276a-616c-477b-91a7-2de20993abd9"/>
+<DataAt indexWithinDimension="4" descriptorUUID="0aa2c5dd-a946-4e68-a798-dddec04c6277" bulkDataUUID="d001eab8-c9a9-41d7-a16b-0b6faedac170"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="50" descriptorUUID="4f4f0d51-bce3-486a-97ab-1eb1e94bdfe7">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="050f01a9-a197-4da7-9b81-4af6c9bfcfb8" bulkDataUUID="1e941164-df29-42e0-bf4b-416c08a84d65"/>
+<DataAt indexWithinDimension="2" descriptorUUID="d6751785-3b55-4f58-b124-865cc25f9b04" bulkDataUUID="63ecd3b4-dfc3-499c-84c2-69434309d420"/>
+<DataAt indexWithinDimension="3" descriptorUUID="fc59f59e-1432-43d1-8d12-c4367d77226a" bulkDataUUID="e34442eb-1817-4af5-957d-1135698b1d75"/>
+<DataAt indexWithinDimension="4" descriptorUUID="edb1d646-16f6-4fb2-8dc3-97c139a541db" bulkDataUUID="83446d24-9fd6-4d63-b3a9-e2ba31fb18ac"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="51" descriptorUUID="98e29c47-367e-49ce-80b7-eb252dc532dd">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="215d2cb2-3a90-4ea3-944e-84eda2911593" bulkDataUUID="cfa9c349-8741-4855-b412-ca634f5ec8ba"/>
+<DataAt indexWithinDimension="2" descriptorUUID="f6a15b13-52c5-4a7e-b9b5-18ad0f09166a" bulkDataUUID="4a8e72cc-100a-4c17-8714-be919e24e10e"/>
+<DataAt indexWithinDimension="3" descriptorUUID="a0bd52e1-1d1d-4fe6-9a9d-0bbb25921fa4" bulkDataUUID="3f538cf8-334a-4eb1-a365-37d4157391b0"/>
+<DataAt indexWithinDimension="4" descriptorUUID="27006f36-d580-4663-b925-d4745ff5f1f1" bulkDataUUID="56fa38ae-306f-4413-9437-5e7df2748383"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="52" descriptorUUID="7541413e-532b-4f22-871a-25ddc5b575f9">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="dcb5f8df-69bb-4a47-a982-9152504227ca" bulkDataUUID="772335e7-7d58-49f5-82ee-a8530d82dd9b"/>
+<DataAt indexWithinDimension="2" descriptorUUID="5f61cc9b-6e6f-4bfb-8e44-352e93333ea7" bulkDataUUID="59b9049d-c5ff-495b-9033-7d390e9f948c"/>
+<DataAt indexWithinDimension="3" descriptorUUID="cc23791c-7db4-4e82-82ac-b77735fea346" bulkDataUUID="b802a9cd-3e1a-4ff3-9284-183cf6cf51f2"/>
+<DataAt indexWithinDimension="4" descriptorUUID="9e746ecc-858f-48c2-956b-ba4eec503e54" bulkDataUUID="f4ed5d6b-f632-49d2-bbea-e62c8d364ec7"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="53" descriptorUUID="ed126ef3-c390-4fd0-a88d-ba6b248ed36f">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="4fbb7f8e-e1a2-4de8-9085-45ff2fb442fb" bulkDataUUID="25d68828-bf24-44a2-bc45-df37915f5c4e"/>
+<DataAt indexWithinDimension="2" descriptorUUID="c2bfd2e5-3b79-47e3-afc5-7252234ff26e" bulkDataUUID="0acd8ddd-7bdc-4e36-8e90-1d583f1365b4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="1928aa0b-36d8-4c13-a2a2-aaf8d46e2749" bulkDataUUID="6316c028-b138-4025-96be-bfad0e345200"/>
+<DataAt indexWithinDimension="4" descriptorUUID="5ae5f52c-61d1-442e-9a56-920abc95b76b" bulkDataUUID="2e592213-df33-410f-8fb0-8ca57432eaa1"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="54" descriptorUUID="0543a237-39c2-451e-84bf-42a61dff2d9b">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="886d72ca-790f-4c01-a684-6af74e3fb943" bulkDataUUID="babbde50-a7e4-4616-8b5c-5d8fd5821cd4"/>
+<DataAt indexWithinDimension="2" descriptorUUID="40e0e2f6-a514-42f3-84e9-b41348915d7c" bulkDataUUID="a2f3bf50-ce3e-4e5e-9dee-f82d4336e62e"/>
+<DataAt indexWithinDimension="3" descriptorUUID="02b576d9-e57a-4b2d-9bf5-a92982540569" bulkDataUUID="a272cca0-6b53-416d-9f86-54384ae64ff6"/>
+<DataAt indexWithinDimension="4" descriptorUUID="c59f77e6-6633-4c92-9a04-b9e20843d9a9" bulkDataUUID="d2119a59-c564-46ad-a771-b2613a1079db"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="55" descriptorUUID="d0ece3c0-2e5e-4ee1-b25d-c1afc415f43e">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="692e947f-39a8-4135-9cd2-0b84cc6d219a" bulkDataUUID="bfdc46b8-7642-417a-8d3b-719295c88d94"/>
+<DataAt indexWithinDimension="2" descriptorUUID="2a675e23-d9c9-43c4-8d21-5ccc5a62cd9d" bulkDataUUID="6982752e-daf0-47f9-b058-1dc8db9c2c31"/>
+<DataAt indexWithinDimension="3" descriptorUUID="4ddd72f3-5e0a-41fe-bc4d-eb0a0fb376cc" bulkDataUUID="d6d661a2-a1be-43db-b51b-77f6c0856aaf"/>
+<DataAt indexWithinDimension="4" descriptorUUID="9092bd7b-1143-4b55-9f7a-9d7d164d2d2b" bulkDataUUID="239f1d77-82ab-4f2e-8ad5-804f6afd2df1"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="56" descriptorUUID="de96516e-37b5-411a-9640-627cfbaa0dea">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="a6ccb1ff-325d-4b9e-9733-2a7c5c9b1cf2" bulkDataUUID="2f5454d6-1ac4-4b7f-a297-27b6884ed71b"/>
+<DataAt indexWithinDimension="2" descriptorUUID="6e57cb4e-4086-44ec-8fa9-73684aef5ba2" bulkDataUUID="a60a6c47-d656-4a58-920e-3014858ffff6"/>
+<DataAt indexWithinDimension="3" descriptorUUID="14ba7686-3784-45ed-a8f0-f72690cd3b0a" bulkDataUUID="23b049e4-8527-4930-acc0-c5cc7665a39d"/>
+<DataAt indexWithinDimension="4" descriptorUUID="86a6135c-ffba-40e1-aa91-703942b01a5a" bulkDataUUID="8f2db095-87c0-4a57-93c2-37ecd5479bfe"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="57" descriptorUUID="f9da3b55-992f-45ce-90c8-f96cba9ffc0b">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="067e69c0-92a7-43d2-9e08-effff9b3136e" bulkDataUUID="28e717af-8277-43d0-ac3b-bf4eb507c2ff"/>
+<DataAt indexWithinDimension="2" descriptorUUID="7f09685b-d5b4-4ca1-8280-3b74455a557c" bulkDataUUID="f3c8e4fb-5d8c-465a-8878-1cff8a5354dd"/>
+<DataAt indexWithinDimension="3" descriptorUUID="d808517f-2c9b-4ebb-a77b-910077fb6bd5" bulkDataUUID="1a2a50fd-d687-445b-a121-532fd741a919"/>
+<DataAt indexWithinDimension="4" descriptorUUID="ba06ede8-557b-4445-9dc9-c5605e4b6223" bulkDataUUID="0625641f-47f3-4cdc-9735-57a01bc4926e"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="58" descriptorUUID="5ad5c71c-cfe3-4e3f-b3a4-da5dcacfb63f">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="b268f45d-6406-467e-a0e9-80da663e8434" bulkDataUUID="2468d1af-2b3b-40fc-86f2-7ca5143577f9"/>
+<DataAt indexWithinDimension="2" descriptorUUID="b86fd6b7-107c-465d-aabd-c20adf6f2ecf" bulkDataUUID="1fa75c3b-99ac-49cf-b7e7-7ac1faea801e"/>
+<DataAt indexWithinDimension="3" descriptorUUID="be18256f-f3a3-4b05-a6cd-bf48d18518b9" bulkDataUUID="84fc55a4-e15a-4630-b8ba-9056d5c39830"/>
+<DataAt indexWithinDimension="4" descriptorUUID="114e87b5-dfc9-4a5d-a2d1-6d274f2ba38f" bulkDataUUID="850f9333-c1d8-43bc-a5dc-dac8aadae482"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="59" descriptorUUID="f32ca7b7-6b7e-4dad-adaa-39a747fbcdf4">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="d96977f7-0f79-447a-a6bf-b1a3d62651b7" bulkDataUUID="beb0fe90-eca9-4aee-936f-41c5f9d9566a"/>
+<DataAt indexWithinDimension="2" descriptorUUID="962a422f-97b4-42df-b49f-7ba1a58066ac" bulkDataUUID="57e30a93-4761-457f-83f1-1279e7619db4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e9496d6f-cbc9-454d-868b-192aee6dad44" bulkDataUUID="740030e0-7d35-4ce7-aa01-52da971548d5"/>
+<DataAt indexWithinDimension="4" descriptorUUID="dcea67c7-5166-4ca0-a351-42a820216103" bulkDataUUID="c583123a-a938-4519-83dd-fc523baf64ef"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="60" descriptorUUID="d648b07a-2578-4521-96e1-7b9d13b7b733">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="de16b6a1-4424-4d36-a03a-e2fb4b111858" bulkDataUUID="6a3af5f2-c74c-43cf-b8e1-39c75c1b2688"/>
+<DataAt indexWithinDimension="2" descriptorUUID="61cb825f-bd62-4fdc-84b0-8cb2a41e66ae" bulkDataUUID="e41951cc-8166-467e-9f4c-f6c13fa02262"/>
+<DataAt indexWithinDimension="3" descriptorUUID="bfdfa01b-9265-4de2-beba-ea23992f1b6e" bulkDataUUID="ee3cfa22-40a8-4b38-9f4f-9b2467907783"/>
+<DataAt indexWithinDimension="4" descriptorUUID="ac159361-f642-4558-a96f-17f27589b858" bulkDataUUID="710cd9e0-214a-42ef-82bd-99435eca2081"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="61" descriptorUUID="854ccaf9-826f-4bf4-8c20-43a25f3dd2fb">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="060525fd-d1c0-409b-8848-cc30c149ff46" bulkDataUUID="960231c5-d47e-426b-8ddd-219c9b9bed62"/>
+<DataAt indexWithinDimension="2" descriptorUUID="35b0bfb8-2a21-41e0-bdfd-46622df00760" bulkDataUUID="4526256b-f5a5-4582-9c13-26c75c1eca61"/>
+<DataAt indexWithinDimension="3" descriptorUUID="5e3c6e4c-8dc0-462a-9c14-f7f1cc57fb03" bulkDataUUID="e51b90e2-da8b-438a-a4a4-ebb2dede0628"/>
+<DataAt indexWithinDimension="4" descriptorUUID="10cf9f0e-d687-441b-a5b1-30cdce7112b8" bulkDataUUID="32a3384f-6207-476d-883d-e3a57cb4a77c"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="62" descriptorUUID="9570732f-616a-4d98-a12e-e2b650acc97c">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="0bdf5b7c-15b8-4af3-aba7-985bb7ea0e0e" bulkDataUUID="b21af9a4-61e7-4848-a395-12378a67d335"/>
+<DataAt indexWithinDimension="2" descriptorUUID="3b32eaf9-99b5-4ba1-9a72-0938a03bf6be" bulkDataUUID="8ba62467-5d0c-4459-8b68-a9dc5d37feb4"/>
+<DataAt indexWithinDimension="3" descriptorUUID="5bf5ecf1-a88a-4214-ab98-bc045914a19d" bulkDataUUID="83d5ad71-1455-4f7a-a7b3-c8c5cb541c74"/>
+<DataAt indexWithinDimension="4" descriptorUUID="a41b4265-34d3-4dcc-adb2-361f04ac7cc5" bulkDataUUID="97fbe606-3059-486c-8ed6-d5a310195ffa"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="63" descriptorUUID="b7c7fac0-b067-4ff4-8994-abc02d7f088e">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="2af3bf9f-2012-4a16-8d20-83b8a6251da7" bulkDataUUID="4449ff54-9071-45d9-ad38-b0082b577833"/>
+<DataAt indexWithinDimension="2" descriptorUUID="3666250a-af9f-4028-b95c-5edc6c61e916" bulkDataUUID="60f51946-f535-4832-a181-87614988951d"/>
+<DataAt indexWithinDimension="3" descriptorUUID="e77312ab-51bf-408b-8445-9e7adac7fb96" bulkDataUUID="bff61056-8efb-432a-a03a-9b0b6ff49306"/>
+<DataAt indexWithinDimension="4" descriptorUUID="f4f1957c-e720-46f4-ad4c-35cbc01019ca" bulkDataUUID="384c8f5f-d4c1-43e1-adac-b1e432286429"/>
+</DimensionalData>
+</DataAt>
+<DataAt indexWithinDimension="64" descriptorUUID="dfa17860-7158-46c6-8e56-f2053ef9c6c0">
+<DimensionalData dimensionID="3">
+<DataAt indexWithinDimension="1" descriptorUUID="1d6082f1-df24-41e7-9c6b-433246e343a9" bulkDataUUID="684e44f2-9c2b-426e-b975-8fa12bb0d078"/>
+<DataAt indexWithinDimension="2" descriptorUUID="366c3b24-b574-4f31-ad0f-5036710b9ca6" bulkDataUUID="aabf0d31-ad36-4419-b935-ade726b6b72d"/>
+<DataAt indexWithinDimension="3" descriptorUUID="0f65840f-4115-40a3-9ff9-3385b8bbf039" bulkDataUUID="9a1c13ec-bc7d-40f3-8233-bc27f283a812"/>
+<DataAt indexWithinDimension="4" descriptorUUID="02fab380-4d49-4eac-820d-d2769a2c1ae9" bulkDataUUID="23f91754-0a04-4371-9f72-371b58c2a7d1"/>
+</DimensionalData>
+</DataAt>
   </DimensionalData>
 </PixelData>
 </AbstractImageDataSet>
