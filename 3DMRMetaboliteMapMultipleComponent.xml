@@ -75,22 +75,7 @@ FLOAT32
       </AxisOrientation>
     </Regular>
   </Dimension>
-  <Dimension idNumber="3" numberOfSamples="4">
-    <!-- Can I use Component Semantics in Dimension ? -->
-    <Semantics>
-      <CodeValue>??</CodeValue>
-      <CodingSchemeDesignator>??</CodingSchemeDesignator>
-      <CodeMeaning>??</CodeMeaning>
-    </Semantics>
-    <Regular width="4" spacing="1.0">
-      <Unit>
-        <CodeValue/>
-        <CodingSchemeDesignator/>
-        <CodeMeaning/>
-      </Unit>
-    </Regular>
-  </Dimension>
-  <Dimension idNumber="4" numberOfSamples="64">
+  <Dimension idNumber="3" numberOfSamples="64">
     <Semantics>
       <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
