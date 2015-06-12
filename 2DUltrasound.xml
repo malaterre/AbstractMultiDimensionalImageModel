@@ -23,97 +23,100 @@ set to the value 3, and of course by the XML Attribute index varying from 1 to
 200.
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
-<Component idNumber="1" dataType="UNSIGNED_INT8">
-  <Semantics>
-    <CodeValue>??</CodeValue>
-    <CodingSchemeDesignator>??</CodingSchemeDesignator>
-    <CodeMeaning>?echo (non-parallel)?</CodeMeaning>
-  </Semantics>
-  <Unit>
-    <CodeValue>?</CodeValue>
-    <CodingSchemeDesignator>?</CodingSchemeDesignator>
-    <CodeMeaning>?</CodeMeaning>
-  </Unit>
-</Component>
-<Dimension idNumber="1" numberOfSamples="640">
-  <Semantics>
+  <Component idNumber="1" dataType="UNSIGNED_INT8">
+    <Semantics>
+      <CodeValue>??</CodeValue>
+      <CodingSchemeDesignator>??</CodingSchemeDesignator>
+      <CodeMeaning>?echo (non-parallel)?</CodeMeaning>
+    </Semantics>
+    <Unit>
+      <CodeValue>?</CodeValue>
+      <CodingSchemeDesignator>?</CodingSchemeDesignator>
+      <CodeMeaning>?</CodeMeaning>
+    </Unit>
+  </Component>
+  <Dimension idNumber="1" numberOfSamples="640">
+    <Semantics>
       <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
       <CodeMeaning>Linear Displacement</CodeMeaning>
-   </Semantics>
-   <Regular width="640" spacing="1.0"><!-- check spacing ? -->
-    <Unit>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
-     </Unit>
-     <!-- FIXME: AxisDirection in US -->
-    <AxisDirection>
-      <CodeValue>110863</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Left-Right Axis</CodeMeaning>
-    </AxisDirection>
-    <AxisOrientation>
-      <CodeValue>110866</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Right To Left</CodeMeaning>
-    </AxisOrientation>
-  </Regular>
-</Dimension>
-<Dimension idNumber="2" numberOfSamples="480">
-  <Semantics>
+    </Semantics>
+    <Regular width="640" spacing="1.0">
+      <!-- check spacing ? -->
+      <Unit>
+        <CodeValue>mm</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <!-- FIXME: AxisDirection in US -->
+      <AxisDirection>
+        <CodeValue>110863</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Left-Right Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110866</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Right To Left</CodeMeaning>
+      </AxisOrientation>
+    </Regular>
+  </Dimension>
+  <Dimension idNumber="2" numberOfSamples="480">
+    <Semantics>
       <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
       <CodeMeaning>Linear Displacement</CodeMeaning>
-  </Semantics>
-  <!-- FIXME: spacing in US ? -->
-  <Regular width="480" spacing="1.0">
-    <Unit>
-    <CodeValue>mm</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>millimeter</CodeMeaning>
-     </Unit>
-    <AxisDirection>
-      <CodeValue>110861</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Head-Foot Axis</CodeMeaning>
-    </AxisDirection>
-    <AxisOrientation>
-      <CodeValue>110868</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Head To Foot</CodeMeaning>
-    </AxisOrientation>
-  </Regular>
-</Dimension>
-<Dimension idNumber="3" numberOfSamples="200">
-  <Semantics>
+    </Semantics>
+    <!-- FIXME: spacing in US ? -->
+    <Regular width="480" spacing="1.0">
+      <Unit>
+        <CodeValue>mm</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <AxisDirection>
+        <CodeValue>110861</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Head-Foot Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110868</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Head To Foot</CodeMeaning>
+      </AxisOrientation>
+    </Regular>
+  </Dimension>
+  <Dimension idNumber="3" numberOfSamples="200">
+    <Semantics>
       <CodeValue>110858</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
       <CodeMeaning>Time</CodeMeaning>
- 
- </Semantics>
-  <Qualitative>
-    <Sample index="1">
-  <Semantics>
-        <CodeValue>s</CodeValue>
+    </Semantics>
+    <Irregular origin="1.0">
+      <SampleLocation index="1" width="1.0" distanceToOrigin="1.0"/>
+      <Unit>
+        <CodeValue>mm</CodeValue>
         <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-        <CodeMeaning>Second</CodeMeaning>
-      </Semantics>
-    </Sample>
- </Qualitative>
-  <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
-  <DirectionCosines
-    concernedSpatialDimension="1" index="0"
-    cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
-    />
-  <DirectionCosines
-    concernedSpatialDimension="2" index="0"
-    cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
-    />
-</Dimension>
-<PixelData>
-  <DimensionalData dimensionID="2">
-    <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>
-  </DimensionalData>
-</PixelData>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <AxisDirection>
+        <CodeValue>110862</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Anterior-Posterior Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110870</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Anterior To Posterior</CodeMeaning>
+      </AxisOrientation>
+    </Irregular>
+    <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
+    <DirectionCosines concernedSpatialDimension="1" index="0" cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"/>
+    <DirectionCosines concernedSpatialDimension="2" index="0" cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"/>
+  </Dimension>
+  <PixelData>
+    <DimensionalData dimensionID="2">
+      <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>
+    </DimensionalData>
+  </PixelData>
 </AbstractImageDataSet>

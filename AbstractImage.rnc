@@ -30,7 +30,7 @@ AbstractImageDataSet =
          element AxisOrientation { CodedTerm  }?
        }
        | element Irregular {
-           element origin { xsd:double },
+           attribute origin { xsd:double },
            element SampleLocation {
              attribute index { xsd:positiveInteger },
              attribute width { xsd:double },
