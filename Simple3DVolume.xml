@@ -9,166 +9,160 @@ Notes: Each voxel contains 1 value
 Assumes this is a 512x512x64 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
-<Component idNumber="1" dataType="UNSIGNED_INT8">
-  <Semantics>
-    <CodeValue>110804</CodeValue>
-    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-    <CodeMeaning>T1 Weighted MR Signal Intensity</CodeMeaning>
-  </Semantics>
-  <Unit>
-    <CodeValue>1</CodeValue>
-    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-    <CodeMeaning>no units</CodeMeaning>
-  </Unit>
-</Component>
-<Dimension idNumber="1" numberOfSamples="512">
-  <Semantics>
-    <CodeValue>110856</CodeValue>
-    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-    <CodeMeaning>Linear Displacement</CodeMeaning>
-  </Semantics>
-  <Regular width="256" spacing="0.5">
+  <Component idNumber="1" dataType="UNSIGNED_INT8">
+    <Semantics>
+      <CodeValue>110804</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>T1 Weighted MR Signal Intensity</CodeMeaning>
+    </Semantics>
     <Unit>
-      <CodeValue>mm</CodeValue>
+      <CodeValue>1</CodeValue>
       <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-      <CodeMeaning>millimeter</CodeMeaning>
+      <CodeMeaning>no units</CodeMeaning>
     </Unit>
-    <AxisDirection>
-      <CodeValue>110860</CodeValue>
+  </Component>
+  <Dimension idNumber="1" numberOfSamples="512">
+    <Semantics>
+      <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Left-Right Axis</CodeMeaning>
-    </AxisDirection>
-    <AxisOrientation>
-      <CodeValue>110866</CodeValue>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
+    </Semantics>
+    <Regular width="256" spacing="0.5">
+      <Unit>
+        <CodeValue>mm</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <AxisDirection>
+        <CodeValue>110860</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Left-Right Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110866</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Right To Left</CodeMeaning>
+      </AxisOrientation>
+    </Regular>
+  </Dimension>
+  <Dimension idNumber="2" numberOfSamples="512">
+    <Semantics>
+      <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Right To Left</CodeMeaning>
-    </AxisOrientation>
-  </Regular>
-</Dimension>
-<Dimension idNumber="2" numberOfSamples="512">
-  <Semantics>
-    <CodeValue>110856</CodeValue>
-    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-    <CodeMeaning>Linear Displacement</CodeMeaning>
-  </Semantics>
-  <Regular width="256" spacing="0.5">
-    <Unit>
-      <CodeValue>mm</CodeValue>
-      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-      <CodeMeaning>millimeter</CodeMeaning>
-    </Unit>
-    <AxisDirection>
-      <CodeValue>110861</CodeValue>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
+    </Semantics>
+    <Regular width="256" spacing="0.5">
+      <Unit>
+        <CodeValue>mm</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <AxisDirection>
+        <CodeValue>110861</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Head-Foot Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110868</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Head To Foot</CodeMeaning>
+      </AxisOrientation>
+    </Regular>
+  </Dimension>
+  <Dimension idNumber="3" numberOfSamples="64">
+    <Semantics>
+      <CodeValue>110856</CodeValue>
       <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Head-Foot Axis</CodeMeaning>
-    </AxisDirection>
-    <AxisOrientation>
-      <CodeValue>110868</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Head To Foot</CodeMeaning>
-    </AxisOrientation>
-  </Regular>
-</Dimension>
-<Dimension idNumber="3" numberOfSamples="64">
-  <Semantics>
-    <CodeValue>110856</CodeValue>
-    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-    <CodeMeaning>Linear Displacement</CodeMeaning>
-  </Semantics>
-  <Regular width="96" spacing="1.5">
-    <Unit>
-      <CodeValue>mm</CodeValue>
-      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-      <CodeMeaning>millimeter</CodeMeaning>
-    </Unit>
-    <AxisDirection>
-      <CodeValue>110862</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Anterior-Posterior Axis</CodeMeaning>
-    </AxisDirection>
-    <AxisOrientation>
-      <CodeValue>110870</CodeValue>
-      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
-      <CodeMeaning>Anterior To Posterior</CodeMeaning>
-    </AxisOrientation>
-  </Regular>
-  <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
-  <DirectionCosines
-    concernedSpatialDimension="1" index="0"
-    cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
-    />
-  <DirectionCosines
-    concernedSpatialDimension="2" index="0"
-    cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
-    />
-</Dimension>
-<PixelData>
-  <DimensionalData dimensionID="3">
-    <!-- descriptorUUID is identical here to indicate we are looking at a Multi-Frame intance -->
-    <DataAt indexWithinDimension="1"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="a1a6e8df-0186-4406-a404-9039ca3b35b2"/>
-    <DataAt indexWithinDimension="2"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="1b8a437e-4421-48a6-b872-6b50de288a67"/>
-    <DataAt indexWithinDimension="3"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9183d16f-ddca-48ef-b70f-48e4d3d4b73a"/>
-    <DataAt indexWithinDimension="4"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="77477bc0-49ba-47c7-8b13-c383a46b3915"/>
-    <DataAt indexWithinDimension="5"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="47e0c797-42bd-454c-9b34-f83f2b6d94a7"/>
-    <DataAt indexWithinDimension="6"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="c8e209cb-7787-4d34-b4b5-65124516e374"/>
-    <DataAt indexWithinDimension="7"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="65465b45-2e09-47fe-9d49-91fff15c59c5"/>
-    <DataAt indexWithinDimension="8"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="4e001774-113f-4391-8960-99392c9448cd"/>
-    <DataAt indexWithinDimension="9"  descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="48b42486-a365-4d19-b392-a5a10c50ae01"/>
-    <DataAt indexWithinDimension="10" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b6902e10-c31a-46c7-9fbf-79d6a1f6e952"/>
-    <DataAt indexWithinDimension="11" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9cd1fdf5-d01c-44a6-9b62-e183e6306007"/>
-    <DataAt indexWithinDimension="12" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="28832594-966b-4048-b35e-0d128ac46316"/>
-    <DataAt indexWithinDimension="13" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f77bffe7-ea72-43f8-abae-25c0df0bda65"/>
-    <DataAt indexWithinDimension="14" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f1a200fb-8eb8-48b4-b4c2-245fb68233ef"/>
-    <DataAt indexWithinDimension="15" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="73fe12ab-29a2-47f6-8ee1-2e2ce053dceb"/>
-    <DataAt indexWithinDimension="16" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="d5f740a9-a2d8-405e-92e7-4d0cbcddf023"/>
-    <DataAt indexWithinDimension="17" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9f438e35-8f75-4183-9f09-bedad1ed8b56"/>
-    <DataAt indexWithinDimension="18" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ae1d99ba-f34c-414b-a0d0-64b560da36df"/>
-    <DataAt indexWithinDimension="19" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7b2491aa-282a-416a-a71a-3efb232a5a5a"/>
-    <DataAt indexWithinDimension="20" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e4c6792c-67a6-4c81-9913-900093f4260c"/>
-    <DataAt indexWithinDimension="21" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="693082df-4404-4cf1-9221-89c141b82ce3"/>
-    <DataAt indexWithinDimension="22" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ad36c27c-f3f0-4e6e-99b3-54bdda6eef20"/>
-    <DataAt indexWithinDimension="23" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="53cb5063-607b-4562-863f-52638126fd24"/>
-    <DataAt indexWithinDimension="24" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="78fc1671-92d8-4653-a82f-607e0b7e5622"/>
-    <DataAt indexWithinDimension="25" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7c3b01cb-f060-4426-a37d-f2a1a86166b5"/>
-    <DataAt indexWithinDimension="26" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e8081494-2c51-4f24-9efe-86a31afb5fae"/>
-    <DataAt indexWithinDimension="27" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="34cad38c-ba18-46ea-9577-764ec0ec8fd0"/>
-    <DataAt indexWithinDimension="28" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f4eda15d-b5ee-45db-b446-517218d5f267"/>
-    <DataAt indexWithinDimension="29" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="1b2f1021-b724-4db4-a877-53a6895c5385"/>
-    <DataAt indexWithinDimension="30" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="169baf70-742f-4efa-b9f4-47de92f03cb0"/>
-    <DataAt indexWithinDimension="31" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="122da300-314e-425b-a85b-088dd2753399"/>
-    <DataAt indexWithinDimension="32" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="5e8a2db7-8b8e-4a82-bae8-bf81257662b9"/>
-    <DataAt indexWithinDimension="33" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7c53cc1a-a1b8-4c8c-b3e5-a000b242184c"/>
-    <DataAt indexWithinDimension="34" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="05befdca-b1e1-4dc9-ada1-c8ec27d5caef"/>
-    <DataAt indexWithinDimension="35" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b8ed30ca-885d-4961-978f-9a605ac2c142"/>
-    <DataAt indexWithinDimension="36" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="39d703e3-6ef2-43d8-a746-bd886af4fbca"/>
-    <DataAt indexWithinDimension="37" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="776967ba-821c-4a33-a836-1d3c54dc3efb"/>
-    <DataAt indexWithinDimension="38" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9df5f428-483c-4ae6-a398-0d87353cbc01"/>
-    <DataAt indexWithinDimension="39" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="096d8f15-ba9a-423c-be92-0deb0e326606"/>
-    <DataAt indexWithinDimension="40" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="711231ef-e7a5-404a-a692-8540cc7c3894"/>
-    <DataAt indexWithinDimension="41" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b568e84a-260d-4075-b9e1-7872f173986c"/>
-    <DataAt indexWithinDimension="42" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="c3916087-c42b-4918-a196-437333d867bb"/>
-    <DataAt indexWithinDimension="43" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="69a5ccdc-6d4c-4b88-a7d4-56852cc0535b"/>
-    <DataAt indexWithinDimension="44" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ba2eba36-790b-4944-b61c-4c99c29f6200"/>
-    <DataAt indexWithinDimension="45" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ec67aa2d-dc8c-4336-8c56-6609d5c5a73b"/>
-    <DataAt indexWithinDimension="46" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="dadd6782-5e67-44df-8815-3da12d668eb7"/>
-    <DataAt indexWithinDimension="47" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="5e227cf7-42c8-478e-922e-339ab37e7bcb"/>
-    <DataAt indexWithinDimension="48" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="2ab61dc4-5f98-41f9-953e-ef2abb41c4e4"/>
-    <DataAt indexWithinDimension="49" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b08090a6-b85b-4710-adeb-0ecbcd93c94d"/>
-    <DataAt indexWithinDimension="50" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="bdb8f955-2883-47b1-9d32-22dc14e04069"/>
-    <DataAt indexWithinDimension="51" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="30eefe24-a439-427a-a24c-7377b3fcbba9"/>
-    <DataAt indexWithinDimension="52" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="00aed4a8-e71e-4c31-8a00-13d43a3929ac"/>
-    <DataAt indexWithinDimension="53" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="82fe20f9-508d-4979-b132-acfd6f3aa1e5"/>
-    <DataAt indexWithinDimension="54" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f55bd2a7-5187-4b8e-b339-114a1d01fb21"/>
-    <DataAt indexWithinDimension="55" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9161af7b-14a4-4be7-b805-c4b13f184ee6"/>
-    <DataAt indexWithinDimension="56" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="dd89e904-418e-4f32-8bd8-ce34553da208"/>
-    <DataAt indexWithinDimension="57" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="42192f78-4d84-4473-bce8-4d26a57fb899"/>
-    <DataAt indexWithinDimension="58" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="96219ae7-be4d-4830-be78-cb49e308c85c"/>
-    <DataAt indexWithinDimension="59" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="cdd5ea33-d62a-44f6-9579-ac781b6144a2"/>
-    <DataAt indexWithinDimension="60" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ccdd65c0-4432-4f37-bf0b-71eac7e119d6"/>
-    <DataAt indexWithinDimension="61" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="fc4690ce-a682-4d77-ac67-59a784729a1a"/>
-    <DataAt indexWithinDimension="62" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="3cf47679-1fda-4d4e-9624-82f42baceb40"/>
-    <DataAt indexWithinDimension="63" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e14f2b19-5abb-4a6c-91b7-2dbb8c202f78"/>
-    <DataAt indexWithinDimension="64" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="0cf76292-30af-45dc-b716-523260281a6a"/>
-  </DimensionalData>
-</PixelData>
+      <CodeMeaning>Linear Displacement</CodeMeaning>
+    </Semantics>
+    <Regular width="96" spacing="1.5">
+      <Unit>
+        <CodeValue>mm</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>millimeter</CodeMeaning>
+      </Unit>
+      <AxisDirection>
+        <CodeValue>110862</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Anterior-Posterior Axis</CodeMeaning>
+      </AxisDirection>
+      <AxisOrientation>
+        <CodeValue>110870</CodeValue>
+        <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+        <CodeMeaning>Anterior To Posterior</CodeMeaning>
+      </AxisOrientation>
+    </Regular>
+    <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
+    <DirectionCosines concernedSpatialDimension="1" index="0" cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"/>
+    <DirectionCosines concernedSpatialDimension="2" index="0" cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"/>
+  </Dimension>
+  <PixelData>
+    <DimensionalData dimensionID="3">
+      <!-- descriptorUUID is identical here to indicate we are looking at a Multi-Frame intance -->
+      <DataAt indexWithinDimension="1" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="a1a6e8df-0186-4406-a404-9039ca3b35b2"/>
+      <DataAt indexWithinDimension="2" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="1b8a437e-4421-48a6-b872-6b50de288a67"/>
+      <DataAt indexWithinDimension="3" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9183d16f-ddca-48ef-b70f-48e4d3d4b73a"/>
+      <DataAt indexWithinDimension="4" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="77477bc0-49ba-47c7-8b13-c383a46b3915"/>
+      <DataAt indexWithinDimension="5" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="47e0c797-42bd-454c-9b34-f83f2b6d94a7"/>
+      <DataAt indexWithinDimension="6" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="c8e209cb-7787-4d34-b4b5-65124516e374"/>
+      <DataAt indexWithinDimension="7" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="65465b45-2e09-47fe-9d49-91fff15c59c5"/>
+      <DataAt indexWithinDimension="8" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="4e001774-113f-4391-8960-99392c9448cd"/>
+      <DataAt indexWithinDimension="9" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="48b42486-a365-4d19-b392-a5a10c50ae01"/>
+      <DataAt indexWithinDimension="10" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b6902e10-c31a-46c7-9fbf-79d6a1f6e952"/>
+      <DataAt indexWithinDimension="11" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9cd1fdf5-d01c-44a6-9b62-e183e6306007"/>
+      <DataAt indexWithinDimension="12" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="28832594-966b-4048-b35e-0d128ac46316"/>
+      <DataAt indexWithinDimension="13" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f77bffe7-ea72-43f8-abae-25c0df0bda65"/>
+      <DataAt indexWithinDimension="14" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f1a200fb-8eb8-48b4-b4c2-245fb68233ef"/>
+      <DataAt indexWithinDimension="15" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="73fe12ab-29a2-47f6-8ee1-2e2ce053dceb"/>
+      <DataAt indexWithinDimension="16" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="d5f740a9-a2d8-405e-92e7-4d0cbcddf023"/>
+      <DataAt indexWithinDimension="17" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9f438e35-8f75-4183-9f09-bedad1ed8b56"/>
+      <DataAt indexWithinDimension="18" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ae1d99ba-f34c-414b-a0d0-64b560da36df"/>
+      <DataAt indexWithinDimension="19" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7b2491aa-282a-416a-a71a-3efb232a5a5a"/>
+      <DataAt indexWithinDimension="20" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e4c6792c-67a6-4c81-9913-900093f4260c"/>
+      <DataAt indexWithinDimension="21" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="693082df-4404-4cf1-9221-89c141b82ce3"/>
+      <DataAt indexWithinDimension="22" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ad36c27c-f3f0-4e6e-99b3-54bdda6eef20"/>
+      <DataAt indexWithinDimension="23" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="53cb5063-607b-4562-863f-52638126fd24"/>
+      <DataAt indexWithinDimension="24" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="78fc1671-92d8-4653-a82f-607e0b7e5622"/>
+      <DataAt indexWithinDimension="25" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7c3b01cb-f060-4426-a37d-f2a1a86166b5"/>
+      <DataAt indexWithinDimension="26" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e8081494-2c51-4f24-9efe-86a31afb5fae"/>
+      <DataAt indexWithinDimension="27" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="34cad38c-ba18-46ea-9577-764ec0ec8fd0"/>
+      <DataAt indexWithinDimension="28" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f4eda15d-b5ee-45db-b446-517218d5f267"/>
+      <DataAt indexWithinDimension="29" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="1b2f1021-b724-4db4-a877-53a6895c5385"/>
+      <DataAt indexWithinDimension="30" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="169baf70-742f-4efa-b9f4-47de92f03cb0"/>
+      <DataAt indexWithinDimension="31" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="122da300-314e-425b-a85b-088dd2753399"/>
+      <DataAt indexWithinDimension="32" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="5e8a2db7-8b8e-4a82-bae8-bf81257662b9"/>
+      <DataAt indexWithinDimension="33" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="7c53cc1a-a1b8-4c8c-b3e5-a000b242184c"/>
+      <DataAt indexWithinDimension="34" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="05befdca-b1e1-4dc9-ada1-c8ec27d5caef"/>
+      <DataAt indexWithinDimension="35" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b8ed30ca-885d-4961-978f-9a605ac2c142"/>
+      <DataAt indexWithinDimension="36" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="39d703e3-6ef2-43d8-a746-bd886af4fbca"/>
+      <DataAt indexWithinDimension="37" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="776967ba-821c-4a33-a836-1d3c54dc3efb"/>
+      <DataAt indexWithinDimension="38" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9df5f428-483c-4ae6-a398-0d87353cbc01"/>
+      <DataAt indexWithinDimension="39" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="096d8f15-ba9a-423c-be92-0deb0e326606"/>
+      <DataAt indexWithinDimension="40" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="711231ef-e7a5-404a-a692-8540cc7c3894"/>
+      <DataAt indexWithinDimension="41" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b568e84a-260d-4075-b9e1-7872f173986c"/>
+      <DataAt indexWithinDimension="42" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="c3916087-c42b-4918-a196-437333d867bb"/>
+      <DataAt indexWithinDimension="43" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="69a5ccdc-6d4c-4b88-a7d4-56852cc0535b"/>
+      <DataAt indexWithinDimension="44" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ba2eba36-790b-4944-b61c-4c99c29f6200"/>
+      <DataAt indexWithinDimension="45" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ec67aa2d-dc8c-4336-8c56-6609d5c5a73b"/>
+      <DataAt indexWithinDimension="46" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="dadd6782-5e67-44df-8815-3da12d668eb7"/>
+      <DataAt indexWithinDimension="47" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="5e227cf7-42c8-478e-922e-339ab37e7bcb"/>
+      <DataAt indexWithinDimension="48" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="2ab61dc4-5f98-41f9-953e-ef2abb41c4e4"/>
+      <DataAt indexWithinDimension="49" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="b08090a6-b85b-4710-adeb-0ecbcd93c94d"/>
+      <DataAt indexWithinDimension="50" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="bdb8f955-2883-47b1-9d32-22dc14e04069"/>
+      <DataAt indexWithinDimension="51" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="30eefe24-a439-427a-a24c-7377b3fcbba9"/>
+      <DataAt indexWithinDimension="52" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="00aed4a8-e71e-4c31-8a00-13d43a3929ac"/>
+      <DataAt indexWithinDimension="53" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="82fe20f9-508d-4979-b132-acfd6f3aa1e5"/>
+      <DataAt indexWithinDimension="54" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="f55bd2a7-5187-4b8e-b339-114a1d01fb21"/>
+      <DataAt indexWithinDimension="55" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="9161af7b-14a4-4be7-b805-c4b13f184ee6"/>
+      <DataAt indexWithinDimension="56" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="dd89e904-418e-4f32-8bd8-ce34553da208"/>
+      <DataAt indexWithinDimension="57" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="42192f78-4d84-4473-bce8-4d26a57fb899"/>
+      <DataAt indexWithinDimension="58" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="96219ae7-be4d-4830-be78-cb49e308c85c"/>
+      <DataAt indexWithinDimension="59" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="cdd5ea33-d62a-44f6-9579-ac781b6144a2"/>
+      <DataAt indexWithinDimension="60" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="ccdd65c0-4432-4f37-bf0b-71eac7e119d6"/>
+      <DataAt indexWithinDimension="61" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="fc4690ce-a682-4d77-ac67-59a784729a1a"/>
+      <DataAt indexWithinDimension="62" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="3cf47679-1fda-4d4e-9624-82f42baceb40"/>
+      <DataAt indexWithinDimension="63" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="e14f2b19-5abb-4a6c-91b7-2dbb8c202f78"/>
+      <DataAt indexWithinDimension="64" descriptorUUID="1fbe0106-6c20-4cf9-b659-ce6185527ace" bulkDataUUID="0cf76292-30af-45dc-b716-523260281a6a"/>
+    </DimensionalData>
+  </PixelData>
 </AbstractImageDataSet>
