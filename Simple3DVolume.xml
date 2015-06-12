@@ -2,6 +2,11 @@
 <!--
 http://dicom.nema.org/medical/dicom/current/output/chtml/part19/sect_A.2.7.html
 A.2.7.1 Simple 3D Volume
+
+T1-weighted MR Signal Intensity
+Notes: Each voxel contains 1 value
+
+Assumes this is a 512x512x64 regular volume (U8)
 -->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
 <Component idNumber="1" dataType="UNSIGNED_INT8">
@@ -16,13 +21,13 @@ A.2.7.1 Simple 3D Volume
     <CodingSchemeVersion/>
   </Unit>
 </Component>
-<Dimension idNumber="1" numberOfSamples="1">
+<Dimension idNumber="1" numberOfSamples="512">
   <Semantics>
     <CodeValue/>
     <CodingSchemeDesignator/>
     <CodingSchemeVersion/>
   </Semantics>
-  <Regular width="512" spacing="0.5">
+  <Regular width="256" spacing="0.5">
     <Unit>
     <CodeValue/>
     <CodingSchemeDesignator/>
@@ -30,13 +35,13 @@ A.2.7.1 Simple 3D Volume
     </Unit>
   </Regular>
 </Dimension>
-<Dimension idNumber="2" numberOfSamples="1">
+<Dimension idNumber="2" numberOfSamples="512">
   <Semantics>
     <CodeValue/>
     <CodingSchemeDesignator/>
     <CodingSchemeVersion/>
   </Semantics>
-  <Regular width="512" spacing="0.5">
+  <Regular width="256" spacing="0.5">
     <Unit>
     <CodeValue/>
     <CodingSchemeDesignator/>
@@ -44,29 +49,29 @@ A.2.7.1 Simple 3D Volume
     </Unit>
   </Regular>
 </Dimension>
-<Dimension idNumber="3" numberOfSamples="1">
+<Dimension idNumber="3" numberOfSamples="64">
   <Semantics>
     <CodeValue/>
     <CodingSchemeDesignator/>
     <CodingSchemeVersion/>
   </Semantics>
-  <Regular width="64" spacing="1.5">
+  <Regular width="96" spacing="1.5">
     <Unit>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+      <CodeValue/>
+      <CodingSchemeDesignator/>
+      <CodingSchemeVersion/>
     </Unit>
   </Regular>
+  <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
+  <DirectionCosines
+    concernedSpatialDimension="1" index="1"
+    cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
+    />
+  <DirectionCosines
+    concernedSpatialDimension="1" index="2"
+    cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
+    />
 </Dimension>
-<Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
-<DirectionCosines
-  concernedSpatialDimension="1" index="1"
-  cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
-  />
-<DirectionCosines
-  concernedSpatialDimension="1" index="2"
-  cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
-  />
 <PixelData>
   <DimensionalData dimensionID="2">
     <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>

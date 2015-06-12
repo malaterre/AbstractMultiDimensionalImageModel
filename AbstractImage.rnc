@@ -47,7 +47,7 @@ AbstractImageDataSet =
            }+
          }),
       element Origin {
-        attribute index { xsd:positiveInteger }?,
+        attribute index { xsd:nonNegativeInteger }?,
         attribute xCoord { xsd:double },
         attribute yCoord { xsd:double },
         attribute zCoord { xsd:double }
