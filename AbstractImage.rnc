@@ -11,7 +11,7 @@ AbstractImageDataSet =
       attribute maxValue { xsd:double }?,
       element Semantics { CodedTerm },
       element Unit { CodedTerm  },
-      element RealWordMapping {
+      element RealWorldMapping {
         attribute rescaleSlope { xsd:double },
         attribute rescaleIntercept { xsd:double },
         element Unit { CodedTerm },
