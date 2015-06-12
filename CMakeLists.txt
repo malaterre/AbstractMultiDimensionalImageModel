@@ -15,6 +15,7 @@ add_custom_command(
 set(examples
   Simple3DVolume
   Simple4DVolume
+  3DMRMetaboliteMapSingleComponent
   )
 foreach(example ${examples})
   add_custom_target(${example} ALL

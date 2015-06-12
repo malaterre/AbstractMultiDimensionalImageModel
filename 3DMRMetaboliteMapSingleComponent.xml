@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+http://dicom.nema.org/medical/dicom/current/output/chtml/part19/sect_A.2.7.4.html
+A.2.7.4 3D MR Metabolite Map - Single Component
+
+Metabolite concentration
+
+Assumes this is a 512x512x4x64 regular volume (U8)
+-->
+<AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
+<Component idNumber="1" dataType="UNSIGNED_INT8">
+  <Semantics>
+    <CodeValue>110804</CodeValue>
+    <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+    <CodeMeaning>T1 Weighted MR Signal Intensity</CodeMeaning>
+  </Semantics>
+  <Unit>
+    <CodeValue>1</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>no units</CodeMeaning>
+  </Unit>
+</Component>
+<Dimension idNumber="1" numberOfSamples="512">
+  <Semantics>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
+  </Semantics>
+  <Regular width="256" spacing="0.5">
+    <Unit>
+      <CodeValue/>
+      <CodingSchemeDesignator/>
+      <CodingSchemeVersion/>
+    </Unit>
+    <AxisDirection>
+      <CodeValue>110860</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Left-Right Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110866</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Right To Left</CodeMeaning>
+    </AxisOrientation>
+  </Regular>
+</Dimension>
+<Dimension idNumber="2" numberOfSamples="512">
+  <Semantics>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
+  </Semantics>
+  <Regular width="256" spacing="0.5">
+    <Unit>
+    <CodeValue/>
+    <CodingSchemeDesignator/>
+    <CodingSchemeVersion/>
+    </Unit>
+    <AxisDirection>
+      <CodeValue>110861</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Head-Foot Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110868</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Head To Foot</CodeMeaning>
+    </AxisOrientation>
+  </Regular>
+</Dimension>
+<Dimension idNumber="3" numberOfSamples="4">
+  <!-- Can I use Component Semantics in Dimension ? -->
+  <Semantics>
+    <CodeValue>??</CodeValue>
+    <CodingSchemeDesignator>??</CodingSchemeDesignator>
+    <CodeMeaning>??</CodeMeaning>
+  </Semantics>
+  <Regular width="4" spacing="1.0">
+    <Unit>
+      <CodeValue/>
+      <CodingSchemeDesignator/>
+      <CodingSchemeVersion/>
+    </Unit>
+  </Regular>
+</Dimension>
+<Dimension idNumber="4" numberOfSamples="64">
+  <Semantics>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
+  </Semantics>
+  <Regular width="96" spacing="1.5">
+    <Unit>
+      <CodeValue/>
+      <CodingSchemeDesignator/>
+      <CodingSchemeVersion/>
+    </Unit>
+    <AxisDirection>
+      <CodeValue>110862</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Anterior-Posterior Axis</CodeMeaning>
+    </AxisDirection>
+    <AxisOrientation>
+      <CodeValue>110870</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Anterior To Posterior</CodeMeaning>
+    </AxisOrientation>
+  </Regular>
+  <Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
+  <DirectionCosines
+    concernedSpatialDimension="1" index="0"
+    cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
+    />
+  <DirectionCosines
+    concernedSpatialDimension="2" index="0"
+    cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
+    />
+</Dimension>
+<PixelData>
+  <DimensionalData dimensionID="2">
+    <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>
+  </DimensionalData>
+</PixelData>
+</AbstractImageDataSet>
