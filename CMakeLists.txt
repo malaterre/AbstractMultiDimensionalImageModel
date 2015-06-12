@@ -15,6 +15,7 @@ add_custom_command(
 set(examples
   Simple3DVolume
   Simple4DVolume
+  #2DUltrasound
   3DMRMetaboliteMapSingleComponent
   3DMRMetaboliteMapMultipleComponent
   )
