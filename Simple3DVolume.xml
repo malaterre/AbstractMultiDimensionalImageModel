@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+http://dicom.nema.org/medical/dicom/current/output/chtml/part19/sect_A.2.7.html
+A.2.7.1 Simple 3D Volume
+-->
 <AbstractImageDataSet xmlns="http://dicom.nema.org/PS3.19/models/AbstractImage">
 <Component idNumber="1" dataType="UNSIGNED_INT8">
   <Semantics>
@@ -40,6 +44,29 @@
     </Unit>
   </Regular>
 </Dimension>
+<Dimension idNumber="3" numberOfSamples="1">
+  <Semantics>
+    <CodeValue/>
+    <CodingSchemeDesignator/>
+    <CodingSchemeVersion/>
+  </Semantics>
+  <Regular width="64" spacing="1.5">
+    <Unit>
+    <CodeValue/>
+    <CodingSchemeDesignator/>
+    <CodingSchemeVersion/>
+    </Unit>
+  </Regular>
+</Dimension>
+<Origin index="0" xCoord="12.3" yCoord="4.56" zCoord="7.89"/>
+<DirectionCosines
+  concernedSpatialDimension="1" index="1"
+  cosAlongX="1.0" cosAlongY="0.0" cosAlongZ="0.0"
+  />
+<DirectionCosines
+  concernedSpatialDimension="1" index="2"
+  cosAlongX="0.0" cosAlongY="1.0" cosAlongZ="0.0"
+  />
 <PixelData>
   <DimensionalData dimensionID="2">
     <DataAt indexWithinDimension="1" descriptorUUID="1-2" bulkDataUUID="1-2-3"/>
