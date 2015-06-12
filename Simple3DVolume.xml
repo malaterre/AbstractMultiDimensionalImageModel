@@ -23,9 +23,9 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Component>
 <Dimension idNumber="1" numberOfSamples="512">
   <Semantics>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
@@ -37,9 +37,9 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Dimension>
 <Dimension idNumber="2" numberOfSamples="512">
   <Semantics>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
   </Semantics>
   <Regular width="256" spacing="0.5">
     <Unit>
@@ -51,9 +51,9 @@ Assumes this is a 512x512x64 regular volume (U8)
 </Dimension>
 <Dimension idNumber="3" numberOfSamples="64">
   <Semantics>
-    <CodeValue/>
-    <CodingSchemeDesignator/>
-    <CodingSchemeVersion/>
+    <CodeValue>mm</CodeValue>
+    <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+    <CodeMeaning>millimeter</CodeMeaning>
   </Semantics>
   <Regular width="96" spacing="1.5">
     <Unit>
