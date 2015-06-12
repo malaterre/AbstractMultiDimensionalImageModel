@@ -97,16 +97,20 @@ Assumes this is a 512x512x64x10 regular volume (U8)
   </Dimension>
   <Dimension idNumber="4" numberOfSamples="10">
     <Semantics>
-      <CodeValue>s</CodeValue>
-      <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
-      <CodeMeaning>Second</CodeMeaning>
+      <CodeValue>110858</CodeValue>
+      <CodingSchemeDesignator>DCM</CodingSchemeDesignator>
+      <CodeMeaning>Time</CodeMeaning>
     </Semantics>
     <Regular width="25" spacing="2.5">
       <Unit>
-        <CodeValue/>
-        <CodingSchemeDesignator/>
-        <CodingSchemeVersion/>
+        <CodeValue>s</CodeValue>
+        <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
+        <CodeMeaning>Second</CodeMeaning>
       </Unit>
+      <!-- AxisDirection / AxisOrientation:
+This XML Element might only be applicable to spatial dimensions, such as those
+dealing with linear displacement. Typically this is in relationship to the
+patient.  -->
     </Regular>
   </Dimension>
   <PixelData>
