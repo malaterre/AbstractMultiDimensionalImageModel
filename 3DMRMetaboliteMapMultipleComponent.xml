@@ -11,7 +11,7 @@ Assumes this is a 512x512x4x64 regular volume (float32)
   <!--
 This example could be difficult to handle since Component can be of any type,
 so it is legal to have Comp#1 be U8, Comp#2 be FLOAT32, Comp#3 U8 and Comp#4
-FLOAT32
+FLOAT32. However aims of example is that each voxel contains 4 values (NAA, Ch, Cr, ...)
        -->
   <Component idNumber="1" dataType="FLOAT32">
     <!-- http://medical.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4033.html -->
