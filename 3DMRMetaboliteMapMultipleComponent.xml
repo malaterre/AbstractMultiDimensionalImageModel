@@ -16,6 +16,7 @@ FLOAT32
   <Component idNumber="1" dataType="FLOAT32">
     <Semantics>
       <!-- FIXME: this is not clear what to use here -->
+      <!-- a single component unit should represent all different measures... should it be set to "no unit" ? -->
       <CodeValue>??</CodeValue>
       <CodingSchemeDesignator>??</CodingSchemeDesignator>
       <CodeMeaning>Metabolite concentration</CodeMeaning>
