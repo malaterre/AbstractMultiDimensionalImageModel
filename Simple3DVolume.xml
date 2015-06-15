@@ -20,19 +20,6 @@ Assumes this is a 512x512x64 regular volume (U8)
       <CodingSchemeDesignator>UCUM</CodingSchemeDesignator>
       <CodeMeaning>no units</CodeMeaning>
     </Unit>
-    <RealWorldMapping rescaleSlope="0.123" rescaleIntercept="4.56">
-      <!-- FIXME: Supp 118 was missing those CID : -->
-      <Unit>
-        <CodeValue>??</CodeValue>
-        <CodingSchemeDesignator>??</CodingSchemeDesignator>
-        <CodeMeaning>??</CodeMeaning>
-      </Unit>
-      <Semantics>
-        <CodeValue>??</CodeValue>
-        <CodingSchemeDesignator>??</CodingSchemeDesignator>
-        <CodeMeaning>??</CodeMeaning>
-      </Semantics>
-    </RealWorldMapping>
   </Component>
   <Dimension idNumber="1" numberOfSamples="512">
     <Semantics>

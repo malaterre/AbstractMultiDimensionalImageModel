@@ -10,13 +10,7 @@ AbstractImageDataSet =
       attribute minValue { xsd:double }?,
       attribute maxValue { xsd:double }?,
       element Semantics { CodedTerm },
-      element Unit { CodedTerm  },
-      element RealWorldMapping {
-        attribute rescaleSlope { xsd:double },
-        attribute rescaleIntercept { xsd:double },
-        element Unit { CodedTerm },
-        element Semantics { CodedTerm }
-      }*
+      element Unit { CodedTerm  }
     }+,
     element Dimension {
       attribute idNumber { xsd:positiveInteger },
